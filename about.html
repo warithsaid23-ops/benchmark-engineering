@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Benchmark Engineering Co. Ltd | Zanzibar's Premier Contractor</title>
+  <meta name="description" content="Founded in 2011, Benchmark Engineering brings UK and international construction leadership to Zanzibar and East Africa. Meet our directors and discover our story." />
+  <meta property="og:title" content="About Benchmark Engineering Co. Ltd" />
+  <meta property="og:description" content="International expertise, local roots. Building Zanzibar's future since 2011." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Benchmark Engineering Co. Ltd",
+    "foundingDate": "2011",
+    "description": "East Africa's most disciplined construction delivery — Zanzibar, Pemba Island and Tanzania mainland since 2011.",
+    "areaServed": ["Zanzibar", "Pemba Island", "Tanzania"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zanzibar",
+      "addressCountry": "TZ"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION — same across all pages
+     Update links here if you add new pages
+     ============================================================ -->
+<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+
+    <!-- Logo wordmark -->
+    <a href="index.html" class="nav__logo" aria-label="Benchmark Engineering — Home">
+      <span class="nav__logo-mark">BENCHMARK</span>
+      <span class="nav__logo-sub">Engineering Co. Ltd</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links" role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+      <li class="nav__dropdown">
+        <a href="services.html" class="nav__link">Services ▾</a>
+        <ul class="nav__dropdown-menu">
+          <li><a href="government.html">Government &amp; Healthcare</a></li>
+          <li><a href="luxury.html">Luxury Residential</a></li>
+          <li><a href="plant.html">Plant &amp; Equipment</a></li>
+        </ul>
+      </li>
+      <li class="nav__dropdown">
+        <a href="projects.html" class="nav__link">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <li><a href="projects/al-saadia-apartments.html">Al-Saadia Apartments</a></li>
+          <li><a href="projects/micheweni-hospital.html">Micheweni Hospital</a></li>
+          <li><a href="projects/ole-secondary-school.html">Ole Secondary School</a></li>
+          <li><a href="projects.html">All Projects</a></li>
+        </ul>
+      </li>
+      <li><a href="digital.html" class="nav__link">Digital Oversight</a></li>
+      <li><a href="careers.html" class="nav__link">Careers</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+
+    <!-- Right controls -->
+    <div class="nav__controls">
+      <!-- Language toggle -->
+      <button class="lang-toggle" aria-label="Toggle language English / Swahili">
+        <span class="lang-en active">EN</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-sw">SW</span>
+      </button>
+      <!-- Staff Portal pill -->
+      <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__portal-btn" target="_blank" rel="noopener" aria-label="Staff Portal — opens in new tab">
+        Staff Portal
+      </a>
+      <!-- Hamburger (mobile) -->
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile overlay menu -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <ul class="nav__mobile-links" role="list">
+      <li><a href="index.html" class="nav__mobile-link">Home</a></li>
+      <li><a href="about.html" class="nav__mobile-link">About</a></li>
+      <li><a href="services.html" class="nav__mobile-link">Services</a></li>
+      <li><a href="projects.html" class="nav__mobile-link">Projects</a></li>
+      <li><a href="government.html" class="nav__mobile-link">Government &amp; Healthcare</a></li>
+      <li><a href="luxury.html" class="nav__mobile-link">Luxury Residential</a></li>
+      <li><a href="digital.html" class="nav__mobile-link">Digital Oversight</a></li>
+      <li><a href="safety.html" class="nav__mobile-link">Safety</a></li>
+      <li><a href="plant.html" class="nav__mobile-link">Plant &amp; Equipment</a></li>
+      <li><a href="careers.html" class="nav__mobile-link">Careers</a></li>
+      <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+      <li>
+        <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__mobile-link nav__mobile-link--portal" target="_blank" rel="noopener">
+          Staff Portal ↗
+        </a>
+      </li>
+    </ul>
+    <div class="nav__mobile-lang">
+      <button class="lang-toggle" aria-label="Toggle language">
+        <span class="lang-en active">EN</span> / <span class="lang-sw">SW</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     PAGE HERO
+     Image: images/site/img-03-site-team-briefing.webp
+     ============================================================ -->
+<header class="page-hero" style="background-image: url('images/site/img-03-site-team-briefing.webp');">
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content container">
+    <p class="page-hero__label">Est. 2011 · Zanzibar, Tanzania</p>
+    <h1 class="page-hero__title">The People Behind<br>Every Project</h1>
+    <p class="page-hero__sub">International expertise brought home — building Zanzibar's most ambitious structures with the discipline of a Tier 1 contractor.</p>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     FOUNDING STORY — narrative text section
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="story-grid">
+
+      <!-- Left: text -->
+      <div class="story-text js-hidden">
+        <p class="section__label">Our Story</p>
+        <h2 class="section__title" id="story-heading">Built on Experience<br>Earned Abroad</h2>
+        <p class="story-body">Benchmark Engineering Co. Ltd was founded in Zanzibar in 2011 with a single conviction: that the islands deserved a construction company held to an international standard. Not a local approximation of it — the genuine article.</p>
+        <p class="story-body">Our founding directors returned from the United Kingdom and Russia not with a wish to replicate East African norms, but to disrupt them. They had managed concrete pours on 46-storey London towers, co-ordinated infrastructure works across UK motorway schemes, and delivered projects under some of Europe's most demanding principal contractors. They brought every lesson home.</p>
+        <p class="story-body">Fifteen years on, Benchmark has delivered more than fifty projects across Zanzibar, Pemba Island, and the Tanzania mainland — government hospitals, luxury residential towers, commercial fit-outs, and critical island infrastructure — all managed to the same uncompromising standard we set on day one.</p>
+        <p class="story-body">We remain independently owned, Zanzibar-registered, and deeply committed to creating skilled employment for Zanzibari people through our Benchmark Pathway programme.</p>
+      </div>
+
+      <!-- Right: pull-stat column -->
+      <div class="story-stats js-hidden">
+        <!-- UPDATE: Replace placeholder numbers with verified figures if they change -->
+        <div class="story-stat">
+          <span class="story-stat__num">2011</span>
+          <span class="story-stat__label">Founded in Zanzibar</span>
+        </div>
+        <div class="story-stat">
+          <span class="story-stat__num">50+</span>
+          <span class="story-stat__label">Projects delivered</span>
+        </div>
+        <div class="story-stat">
+          <span class="story-stat__num">2</span>
+          <span class="story-stat__label">Islands operating</span>
+        </div>
+        <div class="story-stat">
+          <span class="story-stat__num">Class&nbsp;1</span>
+          <span class="story-stat__label">ZCR registered contractor</span>
+        </div>
+        <!-- Credentials block -->
+        <div class="story-creds">
+          <p class="story-creds__label">Registrations &amp; Licences</p>
+          <ul class="story-creds__list">
+            <li>ZCR No. 206</li>
+            <li>ZPPDA Reg. W000367</li>
+            <li>ZRB VAT TIN 111-500-657</li>
+            <li>TRA Registered</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     COMPANY TIMELINE
+     Add more entries below by copying the .timeline__item block
+     ============================================================ -->
+<section class="section section--grey" aria-labelledby="timeline-heading">
+  <div class="container">
+    <p class="section__label text-center">Fifteen Years of Delivery</p>
+    <h2 class="section__title text-center" id="timeline-heading">Our Journey</h2>
+
+    <div class="timeline">
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2011</span>
+          <h3 class="timeline__heading">Company Founded</h3>
+          <p class="timeline__body">Benchmark Engineering Co. Ltd incorporated in Zanzibar. Registered with ZCR and TRA. First contracts awarded in building and civil works on Unguja Island.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2013</span>
+          <h3 class="timeline__heading">Government Sector Entry</h3>
+          <p class="timeline__body">Awarded first public-sector contracts under ZPPDA procurement. Established Benchmark's reputation for compliant, on-programme government delivery.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2015</span>
+          <h3 class="timeline__heading">Pemba Island Operations</h3>
+          <p class="timeline__body">Expanded operations to Pemba Island, becoming one of very few contractors capable of delivering complex projects across both major Zanzibar islands simultaneously.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2017</span>
+          <h3 class="timeline__heading">Healthcare Milestone</h3>
+          <p class="timeline__body">Completed Micheweni District Hospital — a TZS 4.8 billion project serving 123,379 people on Pemba Island. The most technically demanding project in the company's history to that date.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2019</span>
+          <h3 class="timeline__heading">Plant Fleet Expansion</h3>
+          <p class="timeline__body">Invested in a Class 1-grade plant fleet including Komatsu loaders, tracked excavators, and a full complement of concrete mixers, compactors, and surveying equipment — eliminating subcontractor reliance.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2021</span>
+          <h3 class="timeline__heading">Digital Oversight Introduced</h3>
+          <p class="timeline__body">Launched the Benchmark Site Diary — a daily digital reporting system giving clients and directors live visibility of every site across the portfolio. The first system of its kind in East African contracting.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2023</span>
+          <h3 class="timeline__heading">Al-Saadia Apartments Completed</h3>
+          <p class="timeline__body">Delivered Al-Saadia multi-storey residential development in Zanzibar City — a landmark scheme demonstrating Benchmark's capability in premium urban residential construction.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2024–25</span>
+          <h3 class="timeline__heading">Pipeline of Landmark Projects</h3>
+          <p class="timeline__body">Chukwani Villa luxury residential ongoing. Multiple government contracts under procurement. The Benchmark Pathway training programme formally launched to create a pipeline of Zanzibari construction professionals.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item js-hidden">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__year">2026</span>
+          <h3 class="timeline__heading">Looking Forward</h3>
+          <p class="timeline__body">Fifteen years in, Benchmark continues to set the standard for construction delivery in East Africa — with a growing team, an expanding plant fleet, and an unwavering commitment to the islands we call home.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     DIRECTOR PROFILES
+     UPDATE: Replace placeholder initials with actual headshot
+     images once available.
+     Image path: images/team/mahir-said-ali.jpg
+                 images/team/sheikhan-s-mohammed.jpg
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="directors-heading">
+  <div class="container">
+    <p class="section__label text-center">Leadership</p>
+    <h2 class="section__title text-center" id="directors-heading">The Directors</h2>
+    <p class="section__sub text-center">Benchmark was built on international experience earned on some of the world's most challenging construction projects — then brought home to Zanzibar.</p>
+
+    <div class="directors-grid">
+
+      <!-- Director 1: Mahir Said Ali -->
+      <article class="director-card js-hidden" aria-labelledby="director-mahir">
+
+        <!-- UPDATE: When headshot is ready, replace the .director-card__avatar div
+             with: <img src="images/team/mahir-said-ali.jpg" alt="Mahir Said Ali, Managing Director" class="director-card__photo" /> -->
+        <div class="director-card__avatar" aria-hidden="true">
+          <span>MA</span>
+        </div>
+
+        <div class="director-card__body">
+          <h3 class="director-card__name" id="director-mahir">Mahir Said Ali</h3>
+          <p class="director-card__role">Managing Director &amp; Principal Engineer</p>
+          <div class="director-card__bio">
+            <p>Mahir trained and built his career in the United Kingdom, working across some of the most technically demanding construction projects in Europe. His career spans engagements with Skanska, BAM Nuttall, Barhale, PC Harriton, and Dean &amp; Dyball — principal contractors recognised internationally for the rigour of their delivery systems.</p>
+            <p>His UK portfolio includes the Heron Tower, a 46-storey commercial skyscraper in the City of London; major civils works along the River Thames; and the Limehouse Regeneration Programme — a complex urban infrastructure scheme delivering roads, utilities, and public realm across one of London's most congested boroughs.</p>
+            <p>Returning to Zanzibar in 2011, Mahir founded Benchmark with the explicit goal of transplanting European construction discipline to East Africa — not as an aspiration, but as a non-negotiable operating standard.</p>
+          </div>
+          <!-- UPDATE: Add LinkedIn when profile is set up -->
+          <div class="director-card__credentials">
+            <span class="credential-pill">Skanska</span>
+            <span class="credential-pill">BAM Nuttall</span>
+            <span class="credential-pill">Heron Tower</span>
+            <span class="credential-pill">UK-Trained</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Director 2: Sheikhan S Mohammed -->
+      <article class="director-card js-hidden" aria-labelledby="director-sheikhan">
+
+        <!-- UPDATE: When headshot is ready, replace the .director-card__avatar div
+             with: <img src="images/team/sheikhan-s-mohammed.jpg" alt="Sheikhan S Mohammed, Director" class="director-card__photo" /> -->
+        <div class="director-card__avatar" aria-hidden="true">
+          <span>SM</span>
+        </div>
+
+        <div class="director-card__body">
+          <h3 class="director-card__name" id="director-sheikhan">Sheikhan S Mohammed</h3>
+          <p class="director-card__role">Director — Infrastructure &amp; Civil Engineering</p>
+          <div class="director-card__bio">
+            <p>Sheikhan holds both a BSc and MSc in Civil Engineering, having completed his academic training in Russia before pursuing a distinguished career in UK infrastructure. His professional experience includes major engagements with BAM Nuttall — one of the UK's foremost civil engineering contractors — across significant infrastructure schemes.</p>
+            <p>His expertise spans structural design, ground works, drainage, roads, and large-scale civils — exactly the disciplines required to deliver Benchmark's most technically complex government and infrastructure contracts.</p>
+            <p>Sheikhan brings academic rigour and hands-on international project experience to every Benchmark scheme, ensuring that the structural and civil engineering foundations of our work are built to outlast any standard expected in the region.</p>
+          </div>
+          <div class="director-card__credentials">
+            <span class="credential-pill">BSc Civil Engineering</span>
+            <span class="credential-pill">MSc Civil Engineering</span>
+            <span class="credential-pill">BAM Nuttall</span>
+            <span class="credential-pill">Infrastructure</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MISSION / VISION / VALUES
+     Update the text below to reflect any new strategic direction
+     ============================================================ -->
+<section class="section section--navy" aria-labelledby="values-heading">
+  <div class="container">
+    <p class="section__label section__label--gold text-center">What We Stand For</p>
+    <h2 class="section__title section__title--white text-center" id="values-heading">Mission, Vision &amp; Values</h2>
+
+    <div class="mvv-grid">
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Mission</h3>
+        <p class="mvv-card__body">To deliver every project — regardless of scale — to the highest standard of quality, safety, and programme control available in East Africa. We exist to prove that world-class construction is not geography-dependent.</p>
+      </div>
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Vision</h3>
+        <p class="mvv-card__body">To be the contractor of first choice for every significant construction project in Zanzibar and Pemba — trusted by government, preferred by private clients, and recognised across East Africa as the benchmark for project delivery.</p>
+      </div>
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Integrity</h3>
+        <p class="mvv-card__body">We report what is happening on site — not what a client wishes to hear. Our daily digital diaries are a commitment to transparency. Difficult conversations are had early, when there is still time to act.</p>
+      </div>
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Local Ownership</h3>
+        <p class="mvv-card__body">We are Zanzibari-owned and operated. Every TZS of profit invested back into plant, training, and the communities where we build. Our Benchmark Pathway programme is our commitment to creating the next generation of Zanzibari engineers.</p>
+      </div>
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Technical Excellence</h3>
+        <p class="mvv-card__body">Our directors trained under Tier 1 contractors in the UK and Russia. Those standards — rigorous method statements, formal RAMS documentation, daily safety briefings — are applied without compromise to every Benchmark site.</p>
+      </div>
+
+      <div class="mvv-card js-hidden">
+        <div class="mvv-card__icon" aria-hidden="true">◆</div>
+        <h3 class="mvv-card__heading">Community First</h3>
+        <p class="mvv-card__body">We hire locally, train deliberately, and measure our contribution not just in completed structures but in the livelihoods of the people who built them. Construction leaves behind more than buildings — it leaves behind skills.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CREDENTIALS / REGISTRATIONS
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="creds-heading">
+  <div class="container">
+    <p class="section__label text-center">Formal Registrations</p>
+    <h2 class="section__title text-center" id="creds-heading">Licensed &amp; Regulated</h2>
+    <p class="section__sub text-center">Benchmark Engineering is fully registered with all relevant Tanzanian and Zanzibar regulatory bodies. We operate transparently and in full compliance with local procurement law.</p>
+
+    <div class="creds-grid">
+
+      <div class="cred-item js-hidden">
+        <!-- UPDATE: Add certificate scan image when available
+             <img src="images/certs/zcr-certificate.jpg" alt="ZCR Certificate" class="cred-item__img" /> -->
+        <div class="cred-item__icon" aria-hidden="true">🏛</div>
+        <h3 class="cred-item__title">Zanzibar Contractors Registration</h3>
+        <p class="cred-item__ref">ZCR No. 206</p>
+        <p class="cred-item__desc">Class 1 contractor — the highest registration category on the ZCR register. Qualifies Benchmark for all building and civil engineering works in Zanzibar.</p>
+      </div>
+
+      <div class="cred-item js-hidden">
+        <div class="cred-item__icon" aria-hidden="true">📋</div>
+        <h3 class="cred-item__title">ZPPDA Procurement Registration</h3>
+        <p class="cred-item__ref">Reg. W000367</p>
+        <p class="cred-item__desc">Registered with the Zanzibar Public Procurement and Disposal Authority — a prerequisite for all government and public-sector tender participation.</p>
+      </div>
+
+      <div class="cred-item js-hidden">
+        <div class="cred-item__icon" aria-hidden="true">📊</div>
+        <h3 class="cred-item__title">Tanzania Revenue Authority</h3>
+        <p class="cred-item__ref">VAT TIN 111-500-657</p>
+        <p class="cred-item__desc">Fully registered with TRA for VAT and corporate taxation. All Benchmark invoices are VAT-compliant and all tax obligations are discharged in full.</p>
+      </div>
+
+      <div class="cred-item js-hidden">
+        <div class="cred-item__icon" aria-hidden="true">⚖️</div>
+        <h3 class="cred-item__title">Zanzibar Registration Bureau</h3>
+        <p class="cred-item__ref">ZRB Registered</p>
+        <p class="cred-item__desc">Company incorporated and registered with the Zanzibar Registration Bureau. Operating legally and transparently within the Zanzibar business regulatory framework since 2011.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA STRIP
+     ============================================================ -->
+<section class="section section--grey" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-strip js-hidden">
+      <div class="cta-strip__text">
+        <h2 class="cta-strip__title">Ready to Start a Conversation?</h2>
+        <p class="cta-strip__sub">Tell us about your project and we'll come back to you within one business day.</p>
+      </div>
+      <div class="cta-strip__actions">
+        <a href="contact.html" class="btn btn--gold">Enquire Now</a>
+        <a href="projects.html" class="btn btn--outline-navy">View Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER — same across all pages
+     Update company contact details, social links, and page links here
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+
+      <!-- Column 1: Brand & Contact -->
+      <div class="footer__col">
+        <div class="footer__logo">
+          <span class="footer__logo-mark">BENCHMARK</span>
+          <span class="footer__logo-sub">Engineering Co. Ltd</span>
+        </div>
+        <p class="footer__motto">Building the future of Zanzibar — one disciplined project at a time.</p>
+        <ul class="footer__contact">
+          <!-- UPDATE: Replace with final confirmed phone numbers and WhatsApp business number -->
+          <li><a href="tel:+255656262202">+255 656 262 202</a></li>
+          <li><a href="tel:+255717568999">+255 717 568 999</a></li>
+          <li><a href="mailto:bengmark2010@gmail.com">bengmark2010@gmail.com</a></li>
+          <li>Zanzibar, Tanzania</li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Navigate -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Navigate</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="digital.html">Digital Oversight</a></li>
+          <li><a href="safety.html">Safety</a></li>
+          <li><a href="plant.html">Plant &amp; Equipment</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Key Projects -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Key Projects</h3>
+        <ul class="footer__links">
+          <li><a href="projects/al-saadia-apartments.html">Al-Saadia Apartments</a></li>
+          <li><a href="projects/micheweni-hospital.html">Micheweni Hospital</a></li>
+          <li><a href="government.html">Government Works</a></li>
+          <li><a href="luxury.html">Luxury Residential</a></li>
+          <li><a href="projects.html">Full Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Credentials -->
+      <div class="footer__col">
+        <h3 class="footer__heading">Credentials</h3>
+        <ul class="footer__creds">
+          <li>ZCR No. 206 — Class 1</li>
+          <li>ZPPDA Reg. W000367</li>
+          <li>ZRB VAT TIN 111-500-657</li>
+          <li>TRA Registered</li>
+          <li>Est. 2011 · Zanzibar</li>
+        </ul>
+        <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="footer__portal-link" target="_blank" rel="noopener">
+          Staff Portal ↗
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Benchmark Engineering Co. Ltd. All rights reserved.</p>
+      <p>Registered in Zanzibar, Tanzania.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     WHATSAPP FLOATING BUTTON
+     UPDATE: Replace the phone number in the href when the
+     WhatsApp Business number is confirmed.
+     Current placeholder: +255 656 262 202
+     ============================================================ -->
+<a href="https://wa.me/255656262202?text=Hello%20Benchmark%20Engineering%2C%20I%20would%20like%20to%20discuss%20a%20project."
+   class="whatsapp-fab"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

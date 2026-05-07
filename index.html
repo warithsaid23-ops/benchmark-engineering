@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Benchmark Engineering Co. Ltd — East Africa's premier construction contractor. Class 1 registered, UK and Russia-trained leadership. Delivering hospitals, luxury residences and government infrastructure across Zanzibar, Pemba and Tanzania." />
+  <meta name="keywords" content="Benchmark Engineering, construction Zanzibar, contractor Tanzania, Class 1 contractor, civil engineering Pemba, government construction Zanzibar" />
+  <meta property="og:title" content="Benchmark Engineering Co. Ltd — Building Zanzibar's Future" />
+  <meta property="og:description" content="East Africa's most disciplined construction contractor. Zanzibar, Pemba Island and Tanzania mainland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero/img-01-alsaadia-completed.webp" />
+  <title>Benchmark Engineering Co. Ltd | Construction Excellence — Zanzibar & Tanzania</title>
+
+  <!-- Schema.org local business markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Benchmark Engineering Co. Ltd",
+    "description": "Class 1 construction contractor specialising in government infrastructure, healthcare facilities and luxury residential development across Zanzibar, Pemba Island and Tanzania.",
+    "foundingDate": "2011",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kariakoo, Magila/Ndanda Street, House No. 21",
+      "addressLocality": "Zanzibar",
+      "addressCountry": "TZ"
+    },
+    "telephone": ["+255656262202", "+255717568999"],
+    "email": "bengmark2010@gmail.com",
+    "url": "https://benchmarkengineering.co.tz",
+    "areaServed": ["Zanzibar", "Pemba Island", "Dar es Salaam", "Tanzania"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     To update: edit links below. Staff Portal link is external.
+     ============================================================ -->
+<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+
+    <!-- Logo — replace BENCHMARK text with image if logo file is ready -->
+    <a href="index.html" class="logo" aria-label="Benchmark Engineering — Home">
+      <div class="logo__rule"></div>
+      <span class="logo__mark">Benchmark</span>
+      <span class="logo__sub">Engineering Co. Ltd</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="nav__links" role="list">
+      <li><a href="about.html" class="nav__link" data-i18n="nav-about">About</a></li>
+      <li><a href="services.html" class="nav__link" data-i18n="nav-services">Services</a></li>
+
+      <li class="nav__dropdown">
+        <a href="projects.html" class="nav__link" aria-haspopup="true">Projects ▾</a>
+        <ul class="nav__dropdown-menu" role="menu">
+          <li><a href="projects.html" class="nav__dropdown-item" role="menuitem">All Projects</a></li>
+          <li><a href="projects/al-saadia-apartments.html" class="nav__dropdown-item" role="menuitem">Al-Saadia Apartments</a></li>
+          <li><a href="projects/micheweni-hospital.html" class="nav__dropdown-item" role="menuitem">Micheweni Hospital</a></li>
+          <li><a href="projects/ole-secondary-school.html" class="nav__dropdown-item" role="menuitem">Ole Secondary School</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__dropdown">
+        <a href="#" class="nav__link" aria-haspopup="true">Sectors ▾</a>
+        <ul class="nav__dropdown-menu" role="menu">
+          <li><a href="government.html" class="nav__dropdown-item" role="menuitem">Government & Public Sector</a></li>
+          <li><a href="luxury.html" class="nav__dropdown-item" role="menuitem">Luxury Villas & Residential</a></li>
+          <li><a href="digital.html" class="nav__dropdown-item" role="menuitem">Digital Project Oversight</a></li>
+          <li><a href="safety.html" class="nav__dropdown-item" role="menuitem">Safety & Quality</a></li>
+          <li><a href="plant.html" class="nav__dropdown-item" role="menuitem">Plant & Equipment</a></li>
+        </ul>
+      </li>
+
+      <li><a href="careers.html" class="nav__link">Careers</a></li>
+      <li><a href="contact.html" class="nav__link" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+
+    <!-- Language toggle -->
+    <button class="lang-toggle" aria-label="Toggle language English / Swahili" title="Switch to Swahili / English">
+      <span class="lang-en active">EN</span>
+      <span style="color:rgba(255,255,255,0.3);">/</span>
+      <span class="lang-sw">SW</span>
+    </button>
+
+    <!-- Staff Portal button -->
+    <a href="https://warithsaid23-ops.github.io/benchmark-diary"
+       class="nav__portal"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Staff Portal — internal daily reporting system"
+       data-i18n="nav-portal">
+      ⬡ Staff Portal
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div><!-- /.nav__inner -->
+</nav><!-- /.nav -->
+
+<!-- Mobile menu overlay -->
+<div class="nav__mobile" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="about.html"      class="nav__mobile-link" data-i18n="nav-about">About</a>
+  <a href="services.html"   class="nav__mobile-link" data-i18n="nav-services">Services</a>
+  <a href="projects.html"   class="nav__mobile-link" data-i18n="nav-projects">Projects</a>
+  <a href="government.html" class="nav__mobile-link">Government Sector</a>
+  <a href="luxury.html"     class="nav__mobile-link">Luxury Residential</a>
+  <a href="digital.html"    class="nav__mobile-link">Digital Oversight</a>
+  <a href="safety.html"     class="nav__mobile-link">Safety & Quality</a>
+  <a href="plant.html"      class="nav__mobile-link">Plant & Equipment</a>
+  <a href="careers.html"    class="nav__mobile-link">Careers</a>
+  <a href="contact.html"    class="nav__mobile-link" data-i18n="nav-contact">Contact</a>
+  <a href="https://warithsaid23-ops.github.io/benchmark-diary"
+     class="nav__mobile-portal"
+     target="_blank"
+     rel="noopener noreferrer">⬡ Staff Portal</a>
+  <div class="nav__mobile-contact">
+    <div>+255 656 262202</div>
+    <div><a href="mailto:bengmark2010@gmail.com">bengmark2010@gmail.com</a></div>
+    <div>Kariakoo, Zanzibar</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HERO SECTION
+     Background: Al-Saadia Apartments — Benchmark's completed luxury
+     residential development. Shows the standard we build to.
+     ============================================================ -->
+<section class="hero" aria-label="Homepage hero">
+  <div class="hero__bg"
+       style="background-image: url('images/hero/img-01-alsaadia-completed.webp');"
+       role="img"
+       aria-label="Al-Saadia Apartments — completed luxury residential development by Benchmark Engineering, Zanzibar"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <p class="hero__pre">Class 1 Contractor · ZCR No. 206 · Est. 2011</p>
+
+    <h1 class="hero__title display-xl" data-i18n="hero-title">
+      Zanzibar's Most<br>Ambitious Projects<br>Start Here.
+    </h1>
+
+    <p class="hero__sub" data-i18n="hero-sub">
+      Government hospitals. Presidential school openings. Luxury residences. Commercial hotels. Benchmark Engineering delivers construction that meets international specification — on Zanzibar, Pemba Island, and the Tanzania mainland.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="projects.html" class="btn btn-primary btn-arrow" data-i18n="btn-projects">View Our Projects</a>
+      <a href="contact.html"  class="btn btn-ghost" data-i18n="btn-quote">Start Your Build</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section><!-- /.hero -->
+
+
+<!-- ============================================================
+     STATS BAR
+     Update numbers if they change.
+     ============================================================ -->
+<section class="stats-bar" aria-label="Company statistics">
+  <div class="container">
+    <div class="stats-bar__inner">
+
+      <div class="stat js-hidden">
+        <span class="stat__num" data-target="14" data-suffix="+" data-i18n="">14+</span>
+        <span class="stat__label" data-i18n="stat-years">Years Established</span>
+      </div>
+
+      <div class="stat js-hidden">
+        <span class="stat__num" data-target="50" data-suffix="+" data-i18n="">50+</span>
+        <span class="stat__label" data-i18n="stat-projects">Projects Delivered</span>
+      </div>
+
+      <div class="stat js-hidden">
+        <span class="stat__num">Class 1</span>
+        <span class="stat__label" data-i18n="stat-class">Registered Contractor</span>
+      </div>
+
+      <div class="stat js-hidden">
+        <span class="stat__num" data-target="2" data-i18n="">2</span>
+        <span class="stat__label" data-i18n="stat-islands">Islands Operating</span>
+      </div>
+
+      <div class="stat js-hidden">
+        <span class="stat__num">3</span>
+        <span class="stat__label">Concrete Factories</span>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /.stats-bar -->
+
+
+<!-- ============================================================
+     INVESTOR CAPABILITY STRIP
+     Background: Micheweni District Hospital exterior — large-scale
+     completed government project on Pemba Island.
+     ============================================================ -->
+<section class="section" style="padding:0; position:relative; overflow:hidden;" aria-labelledby="island-heading">
+  <div style="position:relative; min-height:520px; display:flex; align-items:center; background-image:url('images/projects/img-07-micheweni-exterior.webp'); background-size:cover; background-position:center;">
+    <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(11,31,58,0.93) 0%, rgba(11,31,58,0.80) 55%, rgba(11,31,58,0.25) 100%);"></div>
+    <div class="container" style="position:relative; z-index:2; padding-top:80px; padding-bottom:80px;">
+      <div style="max-width:600px;" class="js-hidden">
+        <p class="section__label section__label--gold">The Contractor Zanzibar's Investors Trust</p>
+        <h2 style="font-family:var(--font-serif); font-size:clamp(26px,4vw,42px); font-weight:700; color:var(--white); line-height:1.1; margin-bottom:24px;" id="island-heading">
+          Every Serious Project on<br>These Islands Needs One Thing.
+        </h2>
+        <p style="color:rgba(255,255,255,0.82); font-size:clamp(15px,2vw,17px); line-height:1.8; margin-bottom:16px;">A contractor who can actually deliver. Not one who will start strong and run into logistics failures, supply chain gaps, or skill shortfalls halfway through your programme. Benchmark has operated on both islands since 2011. We own our plant. We own our concrete factories. We have built the most complex government and private projects these islands have seen.</p>
+        <p style="color:rgba(255,255,255,0.82); font-size:clamp(15px,2vw,17px); line-height:1.8; margin-bottom:32px;">The building behind this text is Micheweni District Hospital — TZS 4.8 billion, built on Pemba Island, now serving 123,379 people. That is the standard we apply to every project.</p>
+        <div style="display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="projects/micheweni-hospital.html" class="btn--gold" style="display:inline-flex; align-items:center; gap:8px;">See the Case Study →</a>
+          <a href="about.html" style="display:inline-flex; align-items:center; gap:8px; color:rgba(255,255,255,0.8); font-size:14px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid rgba(255,255,255,0.4); padding-bottom:2px;">Meet the Directors →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICES OVERVIEW
+     Edit service titles, descriptions and links below.
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="services-heading">
+  <div class="container">
+
+    <div class="text-center mb-48">
+      <span class="section-label" data-i18n="services-label">Our Disciplines</span>
+      <div class="section-rule section-rule--center"></div>
+      <h2 class="section-heading" id="services-heading" data-i18n="services-title">What We Build</h2>
+      <p class="lead mt-16" style="max-width:560px; margin-left:auto; margin-right:auto;">
+        Six specialist disciplines. One standard of delivery. Every project held to the same rigour — whether a government hospital or a private villa.
+      </p>
+    </div>
+
+    <!-- SERVICE TILES — 6 tiles, 3 per row -->
+    <div class="services-grid">
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">01</div>
+        <h3 class="service-tile__title">Building & Civil Engineering</h3>
+        <p class="service-tile__desc">Multi-storey commercial and residential structures, foundations, structural frames and civil infrastructure works across Tanzania.</p>
+        <a href="services.html#civil" class="service-tile__link">Explore →</a>
+      </div>
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">02</div>
+        <h3 class="service-tile__title">Healthcare Construction</h3>
+        <p class="service-tile__desc">Clinical-grade facilities built to international specification — from structural frame to MEP installation and infection control detailing.</p>
+        <a href="services.html#healthcare" class="service-tile__link">Explore →</a>
+      </div>
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">03</div>
+        <h3 class="service-tile__title">Education & Government</h3>
+        <p class="service-tile__desc">Secondary schools, primary schools, regulatory facilities and government buildings delivered through Ministry frameworks.</p>
+        <a href="services.html#government" class="service-tile__link">Explore →</a>
+      </div>
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">04</div>
+        <h3 class="service-tile__title">Luxury Villas & Residential</h3>
+        <p class="service-tile__desc">Premium private residences and apartment developments — glass curtain walls, steel balconies, and finishes sourced to specification.</p>
+        <a href="luxury.html" class="service-tile__link">Explore →</a>
+      </div>
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">05</div>
+        <h3 class="service-tile__title">Commercial & Hospitality</h3>
+        <p class="service-tile__desc">Hotels, commercial complexes and mixed-use developments — including full rehabilitation and remodelling for institutional clients.</p>
+        <a href="services.html#commercial" class="service-tile__link">Explore →</a>
+      </div>
+
+      <div class="service-tile js-hidden">
+        <div class="service-tile__num">06</div>
+        <h3 class="service-tile__title">Renovation & Fit-Out</h3>
+        <p class="service-tile__desc">Structural renovation, internal fit-out, MEP upgrades and refurbishment works for government, institutional and private clients.</p>
+        <a href="services.html#renovation" class="service-tile__link">Explore →</a>
+      </div>
+
+    </div><!-- /.services-grid -->
+  </div>
+</section><!-- /.services section -->
+
+
+<!-- ============================================================
+     LUXURY RESIDENTIAL STRIP
+     Background: Al-Saadia Apartments rooftop / overview
+     Own photography — Benchmark's flagship luxury residential project
+     ============================================================ -->
+<div style="height:420px; position:relative; overflow:hidden;" role="img" aria-label="Al-Saadia Apartments — Benchmark Engineering luxury residential, Zanzibar">
+  <div style="position:absolute; inset:0; background-image:url('images/projects/img-05-alsaadia-rooftop.webp'); background-size:cover; background-position:center;"></div>
+  <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(11,31,58,0.82) 0%, rgba(11,31,58,0.45) 55%, rgba(11,31,58,0.15) 100%);"></div>
+  <div style="position:absolute; inset:0; display:flex; align-items:center; padding:0 max(40px, 8vw);">
+    <div class="js-hidden">
+      <p style="font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;">Luxury Residential · Zanzibar</p>
+      <p style="font-family:var(--font-serif); font-size:clamp(22px,3.5vw,38px); font-weight:700; color:var(--white); line-height:1.15; max-width:440px; margin-bottom:8px;">Al-Saadia Apartments.</p>
+      <p style="color:rgba(255,255,255,0.75); font-size:15px; line-height:1.7; max-width:420px; margin-bottom:20px;">Benchmark's landmark luxury residential development — multi-storey, premium specification, daily investor reporting throughout. This is what we build for private clients.</p>
+      <a href="projects/al-saadia-apartments.html" class="btn--gold" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">View Case Study →</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     FEATURED PROJECTS
+     ============================================================ -->
+<section class="section section--grey" aria-labelledby="projects-heading">
+  <div class="container">
+
+    <div class="flex items-center justify-between mb-48" style="flex-wrap:wrap; gap:16px;">
+      <div>
+        <span class="section-label" data-i18n="projects-label">Portfolio Highlights</span>
+        <div class="section-rule"></div>
+        <h2 class="section-heading" id="projects-heading" data-i18n="projects-title">Our Work Speaks</h2>
+      </div>
+      <a href="projects.html" class="btn btn-navy btn-arrow">View All Projects</a>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 1: Al-Saadia Apartments -->
+      <article class="project-card js-hidden">
+        <div class="project-card__image">
+          <!-- Replace: images/projects/img-01-alsaadia-completed.webp -->
+          <img src="images/hero/img-01-alsaadia-completed.webp"
+               alt="Al-Saadia Apartments — 8-storey luxury residential building with swimming pool, Chukwani, Zanzibar"
+               loading="lazy" />
+          <div class="project-card__overlay"></div>
+          <div class="project-card__tags">
+            <span class="tag tag--completed">Completed</span>
+            <span class="tag tag--residential">Residential</span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Chukwani, Zanzibar</p>
+          <h3 class="project-card__title">Al-Saadia Apartments</h3>
+          <p class="project-card__desc">Zanzibar's most prominent luxury residential development — 8 storeys, full glass balconies, swimming pool and landscaped grounds.</p>
+          <div class="project-card__meta">
+            <span class="project-card__year">2022</span>
+            <a href="projects/al-saadia-apartments.html" class="project-card__arrow" aria-label="View Al-Saadia case study">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Micheweni District Hospital -->
+      <article class="project-card js-hidden">
+        <div class="project-card__image">
+          <img src="images/projects/img-07-micheweni-exterior.webp"
+               alt="Micheweni District Hospital — completed district hospital, Pemba Island"
+               loading="lazy" />
+          <div class="project-card__overlay"></div>
+          <div class="project-card__tags">
+            <span class="tag tag--completed">Operational</span>
+            <span class="tag tag--govt">Government</span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Micheweni, Pemba Island</p>
+          <h3 class="project-card__title">Micheweni District Hospital</h3>
+          <p class="project-card__desc">Pemba Island's largest healthcare project — a full district hospital serving 123,379 people, built to Western clinical specification.</p>
+          <div class="project-card__meta">
+            <span class="project-card__year">2022</span>
+            <a href="projects/micheweni-hospital.html" class="project-card__arrow" aria-label="View Micheweni Hospital case study">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: Ole Secondary School — standout 2024 govt project -->
+      <article class="project-card js-hidden">
+        <div class="project-card__image">
+          <img src="images/projects/img-20-ole-school-complete.webp"
+               alt="Ole Secondary School completed campus — Pemba Island, opened by President of Zanzibar 2024"
+               loading="lazy" />
+          <div class="project-card__overlay"></div>
+          <div class="project-card__tags">
+            <span class="tag tag--completed">Completed</span>
+            <span class="tag tag--govt">Government</span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Ole, Pemba Island</p>
+          <h3 class="project-card__title">Ole Secondary School</h3>
+          <p class="project-card__desc">Multi-block secondary school campus on Pemba Island, completed 2024 — officially opened by the President of Zanzibar. ZPPDA compliant, delivered on programme.</p>
+          <div class="project-card__meta">
+            <span class="project-card__year">2024</span>
+            <a href="projects/ole-secondary-school.html" class="project-card__arrow" aria-label="View Ole Secondary School case study">→</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.projects-grid -->
+  </div>
+</section><!-- /.projects section -->
+
+
+<!-- ============================================================
+     WHY BENCHMARK — 4 PILLARS
+     Edit pillar titles and body text below.
+     ============================================================ -->
+<section class="section section--navy" aria-labelledby="why-heading">
+  <div class="container">
+
+    <div class="text-center mb-48">
+      <span class="section-label" data-i18n="why-label">The Benchmark Difference</span>
+      <div class="section-rule section-rule--center"></div>
+      <h2 class="section-heading section-heading--white" id="why-heading" data-i18n="why-title">
+        Why clients trust us to deliver
+      </h2>
+    </div>
+
+    <div class="pillars-grid">
+
+      <div class="pillar js-hidden">
+        <span class="pillar__num">01</span>
+        <div class="pillar__rule"></div>
+        <h3 class="pillar__title">International Leadership</h3>
+        <p class="pillar__body">
+          Our directors trained in the United Kingdom and Russia, working on London's skyline with Tier 1 contractors including Skanska, BAM Nuttall and Barhale. Heron Tower. Limehouse Regeneration. River Thames infrastructure. That engineering discipline is now applied to every project in Zanzibar.
+        </p>
+      </div>
+
+      <div class="pillar js-hidden">
+        <span class="pillar__num">02</span>
+        <div class="pillar__rule"></div>
+        <h3 class="pillar__title">Government Trusted</h3>
+        <p class="pillar__body">
+          Benchmark has been entrusted by the Revolutionary Government of Zanzibar with its largest healthcare and education programmes — Micheweni District Hospital, multiple secondary schools and government regulatory facilities across two islands. That trust is earned through delivery, not promise.
+        </p>
+      </div>
+
+      <div class="pillar js-hidden">
+        <span class="pillar__num">03</span>
+        <div class="pillar__rule"></div>
+        <h3 class="pillar__title">Live Digital Oversight</h3>
+        <p class="pillar__body">
+          While most East African contractors rely on WhatsApp groups and paper site books, Benchmark operates a real-time digital project management platform. Every engineer submits a daily site diary from the field. The CEO sees every project status — live — updated by 7pm daily. No other regional contractor does this.
+        </p>
+      </div>
+
+      <div class="pillar js-hidden">
+        <span class="pillar__num">04</span>
+        <div class="pillar__rule"></div>
+        <h3 class="pillar__title">Safety Without Compromise</h3>
+        <p class="pillar__body">
+          Zero-tolerance PPE enforcement. Daily toolbox talks. Formal incident reporting from every site. Safety is not a department at Benchmark — it is the first line of every project brief, every team briefing and every site inspection. Our record across 50+ projects reflects that commitment.
+        </p>
+      </div>
+
+    </div><!-- /.pillars-grid -->
+  </div>
+</section><!-- /.why section -->
+
+
+<!-- ============================================================
+     DIGITAL DIFFERENTIATOR STRIP
+     This section drives traffic to the Digital page.
+     ============================================================ -->
+<section class="digital-strip" aria-label="Digital project oversight highlight">
+  <div class="container">
+    <div class="digital-strip__inner">
+
+      <div>
+        <span class="digital-strip__quote-mark">"</span>
+        <p class="digital-strip__text">
+          While most contractors in East Africa rely on WhatsApp messages and paper site books, Benchmark Engineering operates a real-time digital project management system on par with Tier 1 UK contractors.
+        </p>
+        <p class="mt-24" style="font-size:13px; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase;">
+          Live CEO Dashboard · Daily Site Diaries · Bilingual EN/SW · Instant Safety Alerts
+        </p>
+      </div>
+
+      <div class="digital-strip__actions">
+        <a href="digital.html" class="btn btn-primary btn-arrow" data-i18n="btn-digital">See How It Works</a>
+        <a href="https://warithsaid23-ops.github.io/benchmark-diary"
+           class="btn btn-ghost"
+           target="_blank"
+           rel="noopener noreferrer">⬡ Staff Portal</a>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /.digital-strip -->
+
+
+<!-- ============================================================
+     IMAGE BREAK — Site action image
+     Replace: images/site/img-06-foundation-sunset.webp
+     ============================================================ -->
+<div style="height:420px; overflow:hidden; position:relative;" aria-hidden="true">
+  <img src="images/site/img-06-foundation-sunset.webp"
+       alt="Benchmark Engineering team on site at golden hour — active foundation work"
+       style="width:100%; height:100%; object-fit:cover; object-position:center;"
+       loading="lazy" />
+  <div style="position:absolute;inset:0;background:rgba(11,31,58,0.35);"></div>
+</div>
+
+
+<!-- ============================================================
+     CLIENT ENQUIRY
+     Form submissions: update action URL or connect to Formspree / Netlify Forms
+     ============================================================ -->
+<section class="enquiry section" aria-labelledby="enquiry-heading">
+  <div class="container">
+    <div class="enquiry__inner">
+
+      <div>
+        <span class="section-label">Start a Conversation</span>
+        <div class="section-rule"></div>
+        <h2 class="section-heading" id="enquiry-heading" data-i18n="enquiry-title">
+          Start Your Project Conversation
+        </h2>
+        <p class="lead mt-16" data-i18n="enquiry-sub">
+          Tell us about your project and we'll respond within one business day.
+        </p>
+
+        <div style="margin-top:32px;">
+          <p style="font-size:14px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:16px;">Prefer to talk?</p>
+          <!-- Replace PHONE_NUMBER with actual WhatsApp number when confirmed -->
+          <a href="https://wa.me/255656262202?text=Hello%20Benchmark%20Engineering%2C%20I%20would%20like%20to%20discuss%20a%20project."
+             class="btn btn-whatsapp"
+             target="_blank"
+             rel="noopener noreferrer"
+             data-i18n="whatsapp-cta">
+            WhatsApp Us Directly →
+          </a>
+          <p style="margin-top:12px; font-size:13px; color:var(--text-muted);">
+            +255 656 262202 &nbsp;·&nbsp; +255 717 568999<br>
+            bengmark2010@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <!-- ENQUIRY FORM -->
+      <form class="js-form" novalidate aria-label="Project enquiry form">
+        <div class="enquiry__form-row">
+          <div class="form-group">
+            <label for="enq-name">Your Name</label>
+            <input type="text" id="enq-name" name="name" class="form-control" placeholder="Full name" required />
+          </div>
+          <div class="form-group">
+            <label for="enq-phone">Phone / WhatsApp</label>
+            <input type="tel" id="enq-phone" name="phone" class="form-control" placeholder="+255..." />
+          </div>
+          <div class="form-group">
+            <label for="enq-company">Company / Organisation</label>
+            <input type="text" id="enq-company" name="company" class="form-control" placeholder="Optional" />
+          </div>
+          <div class="form-group">
+            <label for="enq-type">Project Type</label>
+            <select id="enq-type" name="project_type" class="form-control">
+              <option value="" disabled selected>Select type…</option>
+              <option>Government / Public Sector</option>
+              <option>Healthcare Facility</option>
+              <option>Education Building</option>
+              <option>Luxury Residential / Villa</option>
+              <option>Commercial / Hotel</option>
+              <option>Renovation / Fit-Out</option>
+              <option>Civil Engineering</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="enq-location">Project Location</label>
+            <input type="text" id="enq-location" name="location" class="form-control" placeholder="Town / District" />
+          </div>
+          <div class="form-group">
+            <label for="enq-budget">Approx. Budget (TZS)</label>
+            <select id="enq-budget" name="budget" class="form-control">
+              <option value="" disabled selected>Select range…</option>
+              <option>Under 100 million</option>
+              <option>100m – 500m</option>
+              <option>500m – 1 billion</option>
+              <option>1 billion – 5 billion</option>
+              <option>Over 5 billion</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="enq-message">Tell us about your project</label>
+            <textarea id="enq-message" name="message" class="form-control" rows="4" placeholder="Brief description of the work you need…"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top:8px; width:100%; justify-content:center;">
+          Send Enquiry
+        </button>
+        <p style="font-size:12px; color:var(--text-muted); margin-top:12px; text-align:center;">
+          All enquiries responded to within one business day.
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section><!-- /.enquiry -->
+
+
+<!-- ============================================================
+     FOOTER
+     Update contact details, links and registration info here.
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+
+      <!-- Brand column -->
+      <div class="footer__brand">
+        <div class="logo">
+          <div class="logo__rule"></div>
+          <span class="logo__mark">Benchmark</span>
+          <span class="logo__sub">Engineering Co. Ltd</span>
+        </div>
+        <p class="footer__tagline" data-i18n="footer-motto">
+          Building the future of Zanzibar — one disciplined project at a time.
+        </p>
+
+        <div class="footer__contact-item">
+          <span>Office</span>
+          <p>Kariakoo, Magila/Ndanda Street<br>House No. 21, Zanzibar, Tanzania</p>
+        </div>
+        <div class="footer__contact-item">
+          <span>Phone</span>
+          <a href="tel:+255656262202">+255 656 262202</a>
+          <a href="tel:+255717568999">+255 717 568999</a>
+        </div>
+        <div class="footer__contact-item">
+          <span>Email</span>
+          <a href="mailto:bengmark2010@gmail.com">bengmark2010@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- Navigation column -->
+      <div>
+        <h4 class="footer__col-title">Navigate</h4>
+        <ul class="footer__links">
+          <li><a href="about.html"      class="footer__link">About Benchmark</a></li>
+          <li><a href="services.html"   class="footer__link">Our Services</a></li>
+          <li><a href="projects.html"   class="footer__link">Project Portfolio</a></li>
+          <li><a href="government.html" class="footer__link">Government Sector</a></li>
+          <li><a href="luxury.html"     class="footer__link">Luxury Residential</a></li>
+          <li><a href="digital.html"    class="footer__link">Digital Oversight</a></li>
+          <li><a href="safety.html"     class="footer__link">Safety & Quality</a></li>
+          <li><a href="plant.html"      class="footer__link">Plant & Equipment</a></li>
+          <li><a href="careers.html"    class="footer__link">Careers</a></li>
+          <li><a href="contact.html"    class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects column -->
+      <div>
+        <h4 class="footer__col-title">Key Projects</h4>
+        <ul class="footer__links">
+          <li><a href="projects/al-saadia-apartments.html" class="footer__link">Al-Saadia Apartments</a></li>
+          <li><a href="projects/micheweni-hospital.html"   class="footer__link">Micheweni District Hospital</a></li>
+          <li><a href="projects.html"                      class="footer__link">Mkoani Hotel Rehabilitation</a></li>
+          <li><a href="projects.html"                      class="footer__link">Kwale Primary School</a></li>
+          <li><a href="projects.html"                      class="footer__link">566 Stone Town</a></li>
+          <li><a href="projects.html"                      class="footer__link">Chukwani Villa</a></li>
+          <li><a href="https://warithsaid23-ops.github.io/benchmark-diary"
+                 class="footer__link"
+                 target="_blank"
+                 rel="noopener noreferrer">⬡ Staff Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Credentials column -->
+      <div>
+        <h4 class="footer__col-title">Credentials</h4>
+        <div class="footer__creds">
+          <div class="footer__cred">
+            <strong>Contractor Registration Board</strong>
+            Class 1 Building Contractor · Tanzania
+          </div>
+          <div class="footer__cred">
+            <strong>Zanzibar Contractors Registration Board</strong>
+            Registered Building Contractor · ZCR No. 206
+          </div>
+          <div class="footer__cred">
+            <strong>ZPPDA</strong>
+            Public Procurement Registration · Reg. W000367
+          </div>
+          <div class="footer__cred">
+            <strong>Zanzibar Revenue Board</strong>
+            VAT Registered · TIN 111-500-657
+          </div>
+          <div class="footer__cred">
+            <strong>Tanzania Revenue Authority</strong>
+            TIN Registered · TIN 111-500-657
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.footer__grid -->
+
+    <!-- Footer bottom bar -->
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; 2025 Benchmark Engineering Co. Ltd &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; Zanzibar, Tanzania
+      </p>
+      <p class="footer__built">Built to perform.</p>
+    </div>
+
+  </div>
+</footer><!-- /.footer -->
+
+
+<!-- WhatsApp floating button -->
+<!-- Replace PHONE_NUMBER with confirmed WhatsApp business number -->
+<a href="https://wa.me/255656262202?text=Hello%20Benchmark%20Engineering%2C%20I%20would%20like%20to%20discuss%20a%20project."
+   class="whatsapp-fab"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.338-1.504A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.002-1.368l-.358-.213-3.762.893.952-3.667-.234-.376A9.77 9.77 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/>
+  </svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
