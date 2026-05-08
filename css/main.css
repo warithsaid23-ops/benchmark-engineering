@@ -474,6 +474,7 @@ p + p { margin-top: 1em; }
   align-items: flex-end;
   padding-bottom: clamp(60px, 8vw, 100px);
   overflow: hidden;
+  background-color: var(--navy);
 }
 
 .hero__bg {
@@ -482,6 +483,7 @@ p + p { margin-top: 1em; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--navy);
   transform: scale(1.04);
   transition: transform 8s ease;
 }
@@ -527,7 +529,7 @@ p + p { margin-top: 1em; }
 }
 
 .hero__title {
-  color: var(--white);
+  color: var(--gold);
   max-width: 900px;
   margin-bottom: 24px;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -56,40 +56,30 @@
     <!-- Desktop nav links -->
     <ul class="nav__links" role="list">
       <li><a href="about.html" class="nav__link" data-i18n="nav-about">About</a></li>
-      <li><a href="services.html" class="nav__link" data-i18n="nav-services">Services</a></li>
+      <li class="nav__dropdown">
+        <a href="services.html" class="nav__link" aria-haspopup="true" data-i18n="nav-services">Services ▾</a>
+        <ul class="nav__dropdown-menu" role="menu">
+          <li><a href="government.html" class="nav__dropdown-item" role="menuitem">Government &amp; Healthcare</a></li>
+          <li><a href="luxury.html" class="nav__dropdown-item" role="menuitem">Luxury Residential</a></li>
+          <li><a href="plant.html" class="nav__dropdown-item" role="menuitem">Plant &amp; Equipment</a></li>
+          <li><a href="safety.html" class="nav__dropdown-item" role="menuitem">Safety</a></li>
+        </ul>
+      </li>
 
       <li class="nav__dropdown">
         <a href="projects.html" class="nav__link" aria-haspopup="true">Projects ▾</a>
         <ul class="nav__dropdown-menu" role="menu">
           <li><a href="projects.html" class="nav__dropdown-item" role="menuitem">All Projects</a></li>
-          <li><a href="projects/al-saadia-apartments.html" class="nav__dropdown-item" role="menuitem">Al-Saadia Apartments</a></li>
+          <li><a href="projects/al-saadia-apartments.html" class="nav__dropdown-item" role="menuitem">Al-Saadi Apartments</a></li>
           <li><a href="projects/micheweni-hospital.html" class="nav__dropdown-item" role="menuitem">Micheweni Hospital</a></li>
           <li><a href="projects/ole-secondary-school.html" class="nav__dropdown-item" role="menuitem">Ole Secondary School</a></li>
           <li><a href="projects/kwale-secondary-school.html" class="nav__dropdown-item" role="menuitem">Kwale Secondary School</a></li>
         </ul>
       </li>
 
-      <li class="nav__dropdown">
-        <a href="#" class="nav__link" aria-haspopup="true">Sectors ▾</a>
-        <ul class="nav__dropdown-menu" role="menu">
-          <li><a href="government.html" class="nav__dropdown-item" role="menuitem">Government & Public Sector</a></li>
-          <li><a href="luxury.html" class="nav__dropdown-item" role="menuitem">Luxury Villas & Residential</a></li>
-          <li><a href="digital.html" class="nav__dropdown-item" role="menuitem">Digital Project Oversight</a></li>
-          <li><a href="safety.html" class="nav__dropdown-item" role="menuitem">Safety & Quality</a></li>
-          <li><a href="plant.html" class="nav__dropdown-item" role="menuitem">Plant & Equipment</a></li>
-        </ul>
-      </li>
-
-      <li><a href="careers.html" class="nav__link">Careers</a></li>
+      <li><a href="digital.html" class="nav__link" data-i18n="nav-digital">Digital Oversight</a></li>
       <li><a href="contact.html" class="nav__link" data-i18n="nav-contact">Contact</a></li>
     </ul>
-
-    <!-- Language toggle -->
-    <button class="lang-toggle" aria-label="Toggle language English / Swahili" title="Switch to Swahili / English">
-      <span class="lang-en active">EN</span>
-      <span style="color:rgba(255,255,255,0.3);">/</span>
-      <span class="lang-sw">SW</span>
-    </button>
 
     <!-- Staff Portal button -->
     <a href="https://warithsaid23-ops.github.io/benchmark-diary"
@@ -117,9 +107,8 @@
   <a href="government.html" class="nav__mobile-link">Government Sector</a>
   <a href="luxury.html"     class="nav__mobile-link">Luxury Residential</a>
   <a href="digital.html"    class="nav__mobile-link">Digital Oversight</a>
-  <a href="safety.html"     class="nav__mobile-link">Safety & Quality</a>
-  <a href="plant.html"      class="nav__mobile-link">Plant & Equipment</a>
-  <a href="careers.html"    class="nav__mobile-link">Careers</a>
+  <a href="safety.html"     class="nav__mobile-link">Safety &amp; Quality</a>
+  <a href="plant.html"      class="nav__mobile-link">Plant &amp; Equipment</a>
   <a href="contact.html"    class="nav__mobile-link" data-i18n="nav-contact">Contact</a>
   <a href="https://warithsaid23-ops.github.io/benchmark-diary"
      class="nav__mobile-portal"
@@ -192,13 +181,18 @@
       </div>
 
       <div class="stat js-hidden">
+        <span class="stat__num">3</span>
+        <span class="stat__label">Concrete Factories</span>
+      </div>
+
+      <div class="stat js-hidden">
         <span class="stat__num" data-target="2" data-i18n="">2</span>
         <span class="stat__label" data-i18n="stat-islands">Islands Operating</span>
       </div>
 
       <div class="stat js-hidden">
-        <span class="stat__num">3</span>
-        <span class="stat__label">Concrete Factories</span>
+        <span class="stat__num">100+</span>
+        <span class="stat__label">Workforce</span>
       </div>
 
     </div>
@@ -300,16 +294,16 @@
 
 <!-- ============================================================
      LUXURY RESIDENTIAL STRIP
-     Background: Al-Saadia Apartments rooftop / overview
+     Background: Al-Saadi Apartments rooftop / overview
      Own photography — Benchmark's flagship luxury residential project
      ============================================================ -->
-<div style="height:420px; position:relative; overflow:hidden;" role="img" aria-label="Al-Saadia Apartments — Benchmark Engineering luxury residential, Zanzibar">
+<div style="height:420px; position:relative; overflow:hidden;" role="img" aria-label="Al-Saadi Apartments — Benchmark Engineering luxury residential, Zanzibar">
   <div style="position:absolute; inset:0; background-image:url('images/projects/img-30-alsaadia-pool-sunset.png'); background-size:cover; background-position:center;"></div>
   <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(11,31,58,0.82) 0%, rgba(11,31,58,0.45) 55%, rgba(11,31,58,0.15) 100%);"></div>
   <div style="position:absolute; inset:0; display:flex; align-items:center; padding:0 max(40px, 8vw);">
     <div class="js-hidden">
       <p style="font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;">Luxury Residential · Zanzibar</p>
-      <p style="font-family:var(--font-serif); font-size:clamp(22px,3.5vw,38px); font-weight:700; color:var(--white); line-height:1.15; max-width:440px; margin-bottom:8px;">Al-Saadia Apartments.</p>
+      <p style="font-family:var(--font-serif); font-size:clamp(22px,3.5vw,38px); font-weight:700; color:var(--white); line-height:1.15; max-width:440px; margin-bottom:8px;">Al-Saadi Apartments.</p>
       <p style="color:rgba(255,255,255,0.75); font-size:15px; line-height:1.7; max-width:420px; margin-bottom:20px;">Benchmark's landmark luxury residential development — multi-storey, premium specification, daily investor reporting throughout. This is what we build for private clients.</p>
       <a href="projects/al-saadia-apartments.html" class="btn--gold" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">View Case Study →</a>
     </div>
@@ -334,11 +328,11 @@
 
     <div class="projects-grid">
 
-      <!-- PROJECT 1: Al-Saadia Apartments -->
+      <!-- PROJECT 1: Al-Saadi Apartments -->
       <article class="project-card js-hidden">
         <div class="project-card__image">
           <img src="images/projects/img-31-alsaadia-pool-building.png"
-               alt="Al-Saadia Apartments — completed building with swimming pool, Zanzibar"
+               alt="Al-Saadi Apartments — completed building with swimming pool, Zanzibar"
                loading="lazy" />
           <div class="project-card__overlay"></div>
           <div class="project-card__tags">
@@ -348,11 +342,11 @@
         </div>
         <div class="project-card__body">
           <p class="project-card__location">Chukwani, Zanzibar</p>
-          <h3 class="project-card__title">Al-Saadia Apartments</h3>
+          <h3 class="project-card__title">Al-Saadi Apartments</h3>
           <p class="project-card__desc">Zanzibar's most prominent luxury residential development — 8 storeys, full glass balconies, swimming pool and landscaped grounds.</p>
           <div class="project-card__meta">
             <span class="project-card__year">2022</span>
-            <a href="projects/al-saadia-apartments.html" class="project-card__arrow" aria-label="View Al-Saadia case study">→</a>
+            <a href="projects/al-saadia-apartments.html" class="project-card__arrow" aria-label="View Al-Saadi case study">→</a>
           </div>
         </div>
       </article>
@@ -663,7 +657,7 @@
       <div>
         <h4 class="footer__col-title">Key Projects</h4>
         <ul class="footer__links">
-          <li><a href="projects/al-saadia-apartments.html" class="footer__link">Al-Saadia Apartments</a></li>
+          <li><a href="projects/al-saadia-apartments.html" class="footer__link">Al-Saadi Apartments</a></li>
           <li><a href="projects/micheweni-hospital.html"   class="footer__link">Micheweni District Hospital</a></li>
           <li><a href="projects.html"                      class="footer__link">Mkoani Hotel Rehabilitation</a></li>
           <li><a href="projects.html"                      class="footer__link">Kwale Primary School</a></li>

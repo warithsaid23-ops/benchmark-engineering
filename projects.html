@@ -26,7 +26,6 @@
       <span class="nav__logo-sub">Engineering Co. Ltd</span>
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="index.html" class="nav__link">Home</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
       <li class="nav__dropdown">
         <a href="services.html" class="nav__link">Services ▾</a>
@@ -34,12 +33,13 @@
           <li><a href="government.html" class="nav__dropdown-item">Government &amp; Healthcare</a></li>
           <li><a href="luxury.html" class="nav__dropdown-item">Luxury Residential</a></li>
           <li><a href="plant.html" class="nav__dropdown-item">Plant &amp; Equipment</a></li>
+          <li><a href="safety.html" class="nav__dropdown-item">Safety</a></li>
         </ul>
       </li>
       <li class="nav__dropdown">
         <a href="projects.html" class="nav__link nav__link--active">Projects ▾</a>
         <ul class="nav__dropdown-menu">
-          <li><a href="projects/al-saadia-apartments.html" class="nav__dropdown-item">Al-Saadia Apartments</a></li>
+          <li><a href="projects/al-saadia-apartments.html" class="nav__dropdown-item">Al-Saadi Apartments</a></li>
           <li><a href="projects/micheweni-hospital.html" class="nav__dropdown-item">Micheweni Hospital</a></li>
           <li><a href="projects/ole-secondary-school.html" class="nav__dropdown-item">Ole Secondary School</a></li>
           <li><a href="projects/kwale-secondary-school.html" class="nav__dropdown-item">Kwale Secondary School</a></li>
@@ -47,15 +47,9 @@
         </ul>
       </li>
       <li><a href="digital.html" class="nav__link">Digital Oversight</a></li>
-      <li><a href="careers.html" class="nav__link">Careers</a></li>
       <li><a href="contact.html" class="nav__link">Contact</a></li>
     </ul>
     <div class="nav__controls">
-      <button class="lang-toggle" aria-label="Toggle language">
-        <span class="lang-en active">EN</span>
-        <span class="lang-divider">/</span>
-        <span class="lang-sw">SW</span>
-      </button>
       <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__portal-btn" target="_blank" rel="noopener">Staff Portal</a>
       <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -64,7 +58,6 @@
   </div>
   <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
     <ul class="nav__mobile-links" role="list">
-      <li><a href="index.html" class="nav__mobile-link">Home</a></li>
       <li><a href="about.html" class="nav__mobile-link">About</a></li>
       <li><a href="services.html" class="nav__mobile-link">Services</a></li>
       <li><a href="projects.html" class="nav__mobile-link">Projects</a></li>
@@ -73,7 +66,6 @@
       <li><a href="digital.html" class="nav__mobile-link">Digital Oversight</a></li>
       <li><a href="safety.html" class="nav__mobile-link">Safety</a></li>
       <li><a href="plant.html" class="nav__mobile-link">Plant &amp; Equipment</a></li>
-      <li><a href="careers.html" class="nav__mobile-link">Careers</a></li>
       <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
       <li><a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__mobile-link nav__mobile-link--portal" target="_blank" rel="noopener">Staff Portal ↗</a></li>
     </ul>
@@ -141,7 +133,7 @@
         </div>
         <div class="project-card__body">
           <p class="project-card__location">Zanzibar City, Unguja</p>
-          <h3 class="project-card__title" id="proj-alsaadia">Al-Saadia Apartments</h3>
+          <h3 class="project-card__title" id="proj-alsaadia">Al-Saadi Apartments</h3>
           <p class="project-card__desc">Multi-storey luxury residential development in the heart of Zanzibar City. Benchmark's landmark private residential scheme — precision formwork, premium finishes, and daily digital reporting to investor clients.</p>
           <div class="project-card__meta">
             <span class="project-card__year">2023</span>
@@ -176,30 +168,6 @@
         </div>
       </article>
 
-      <!-- ── Mkoani Hotel ── -->
-      <!-- Image: images/projects/img-13-mkoani-hotel.webp -->
-      <article class="project-card filterable-card js-hidden"
-               data-categories="commercial"
-               aria-labelledby="proj-mkoani">
-        <div class="project-card__image">
-          <img src="images/projects/img-13-mkoani-hotel.webp"
-               alt="Mkoani Hotel commercial project — Pemba Island" loading="lazy" />
-          <div class="project-card__overlay"></div>
-          <div class="project-card__tags">
-            <span class="tag tag--completed">Completed</span>
-            <span class="tag tag--commercial">Commercial</span>
-          </div>
-        </div>
-        <div class="project-card__body">
-          <p class="project-card__location">Mkoani, Pemba Island</p>
-          <h3 class="project-card__title" id="proj-mkoani">Mkoani Hotel</h3>
-          <p class="project-card__desc">Full hotel construction on Pemba Island's southern coast. Commercial hospitality build completed to operator specification, demonstrating Benchmark's capability across both main Zanzibar islands.</p>
-          <div class="project-card__meta">
-            <span class="project-card__year">2021</span>
-            <a href="contact.html" class="project-card__arrow" aria-label="Enquire about Mkoani Hotel">→</a>
-          </div>
-        </div>
-      </article>
 
       <!-- ── Chukwani Villa ── (ongoing) -->
       <!-- Image: images/projects/img-15-chukwani-villa.webp -->
@@ -302,57 +270,7 @@
         </div>
       </article>
 
-      <!-- ── Heron Tower Reference (director's UK experience) ── -->
-      <!-- This is a reference project not a Benchmark delivery    -->
-      <!-- Presented as Director's International Experience        -->
-      <!-- Image: images/site/img-11-formwork-detail.webp -->
-      <article class="project-card filterable-card js-hidden"
-               data-categories="commercial"
-               aria-labelledby="proj-commercial-fitout">
-        <div class="project-card__image">
-          <img src="images/site/img-11-formwork-detail.webp"
-               alt="Commercial fit-out work by Benchmark Engineering" loading="lazy" />
-          <div class="project-card__overlay"></div>
-          <div class="project-card__tags">
-            <span class="tag tag--completed">Completed</span>
-            <span class="tag tag--commercial">Commercial</span>
-          </div>
-        </div>
-        <div class="project-card__body">
-          <p class="project-card__location">Zanzibar City</p>
-          <h3 class="project-card__title" id="proj-commercial-fitout">Commercial Office Fit-Out</h3>
-          <p class="project-card__desc">Full commercial interior fit-out including partitioning, suspended ceilings, mechanical and electrical co-ordination, and high-specification flooring. Delivered while building remained partially occupied.</p>
-          <div class="project-card__meta">
-            <span class="project-card__year">2022</span>
-            <a href="contact.html" class="project-card__arrow" aria-label="Enquire about commercial projects">→</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- ── Heritage Renovation ── -->
-      <!-- Image: images/site/img-12-interior-fit-out.webp -->
-      <article class="project-card filterable-card js-hidden"
-               data-categories="renovation"
-               aria-labelledby="proj-heritage">
-        <div class="project-card__image">
-          <img src="images/projects/img-27-stonetown-drone.jpg"
-               alt="Stone Town, Zanzibar — UNESCO World Heritage Zone aerial view" loading="lazy" />
-          <div class="project-card__overlay"></div>
-          <div class="project-card__tags">
-            <span class="tag tag--completed">Completed</span>
-            <span class="tag tag--commercial">Renovation</span>
-          </div>
-        </div>
-        <div class="project-card__body">
-          <p class="project-card__location">Stone Town, Zanzibar</p>
-          <h3 class="project-card__title" id="proj-heritage">Stone Town Heritage Renovation</h3>
-          <p class="project-card__desc">Sensitive renovation of a historic building in Zanzibar's Stone Town UNESCO World Heritage zone. Required careful structural assessment, lime mortar repairs, and premium internal fit-out while preserving the original character.</p>
-          <div class="project-card__meta">
-            <span class="project-card__year">2020</span>
-            <a href="contact.html" class="project-card__arrow" aria-label="Enquire about renovation projects">→</a>
-          </div>
-        </div>
-      </article>
 
       <!-- ── Foundation Works (ongoing) ── -->
       <!-- Image: images/site/img-06-foundation-sunset.webp -->
@@ -480,7 +398,7 @@
       <div class="footer__col">
         <span class="footer__heading">Key Projects</span>
         <ul class="footer__links">
-          <li><a href="projects/al-saadia-apartments.html">Al-Saadia Apartments</a></li>
+          <li><a href="projects/al-saadia-apartments.html">Al-Saadi Apartments</a></li>
           <li><a href="projects/micheweni-hospital.html">Micheweni Hospital</a></li>
           <li><a href="government.html">Government Works</a></li>
           <li><a href="luxury.html">Luxury Residential</a></li>
