@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +13,265 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    /* ── DIGITAL PAGE — HERO SPLIT SCREEN ─────────────────────── */
+    .digital-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      background: var(--navy);
+      padding-top: var(--nav-height);
+    }
+    .digital-hero__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 48px;
+      background: var(--navy-deep);
+      border-right: 1px solid rgba(201,168,76,0.18);
+    }
+    .digital-hero__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 64px;
+    }
+    .digital-hero__right .hero__ctas { margin-top: 32px; }
+
+    /* ── DASHBOARD MOCKUP ──────────────────────────────────────── */
+    .dash-browser {
+      width: 100%;
+      max-width: 440px;
+      background: #13263d;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,168,76,0.2);
+      font-family: var(--font-mono);
+    }
+    .dash-browser__bar {
+      background: #0b1e2e;
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .dash-browser__dots { display: flex; gap: 6px; }
+    .dash-browser__dots span { width: 10px; height: 10px; border-radius: 50%; }
+    .dash-browser__dots span:nth-child(1) { background: #FF5F57; }
+    .dash-browser__dots span:nth-child(2) { background: #FFBD2E; }
+    .dash-browser__dots span:nth-child(3) { background: #28C840; }
+    .dash-browser__url {
+      flex: 1;
+      background: rgba(255,255,255,0.06);
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dash-content { padding: 20px; }
+    .dash-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(201,168,76,0.18);
+    }
+    .dash-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    .dash-date { font-size: 10px; color: rgba(255,255,255,0.3); }
+    .dash-section-label {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 8px;
+    }
+    .dash-rows { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+    .dash-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 4px;
+    }
+    .rag {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .rag--green { background: #28C840; box-shadow: 0 0 6px rgba(40,200,64,0.7); }
+    .rag--amber { background: #FFBD2E; box-shadow: 0 0 6px rgba(255,189,46,0.7); }
+    .rag--red   { background: #FF5F57; box-shadow: 0 0 6px rgba(255,95,87,0.7); }
+    .dash-project { flex: 1; font-size: 11px; color: rgba(255,255,255,0.75); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dash-badge {
+      font-size: 9px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .dash-badge--ok   { background: rgba(40,200,64,0.15); color: #28C840; }
+    .dash-badge--warn { background: rgba(255,189,46,0.15); color: #FFBD2E; }
+    .dash-badge--alert{ background: rgba(255,95,87,0.15);  color: #FF5F57; }
+    .dash-statsbar {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2px;
+      background: rgba(201,168,76,0.15);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .dash-stat {
+      background: #0d1e2f;
+      padding: 12px 8px;
+      text-align: center;
+    }
+    .dash-stat__num {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .dash-stat__lbl {
+      display: block;
+      font-size: 8px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    /* ── FEATURE ICONS SVG ─────────────────────────────────────── */
+    .feature-item__icon-svg {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      color: var(--gold);
+    }
+    .feature-item__icon-svg svg { width: 22px; height: 22px; }
+
+    /* ── STATS COUNTER SECTION ─────────────────────────────────── */
+    .digital-counter {
+      background: var(--navy);
+      padding: var(--section-pad) 0;
+    }
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 3px;
+      background: rgba(201,168,76,0.15);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .counter-cell {
+      background: var(--navy-deep);
+      padding: 52px 40px;
+      text-align: center;
+    }
+    .counter-num {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: clamp(48px, 5vw, 72px);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .counter-lbl {
+      display: block;
+      color: rgba(255,255,255,0.55);
+      font-size: 15px;
+      line-height: 1.55;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    /* ── SCORECARD ─────────────────────────────────────────────── */
+    .scorecard-wrap { overflow-x: auto; margin-top: 40px; -webkit-overflow-scrolling: touch; }
+    .scorecard {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: separate;
+      border-spacing: 3px;
+      table-layout: fixed;
+    }
+    .scorecard thead th {
+      padding: 16px 18px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 4px 4px 0 0;
+    }
+    .scorecard tbody td {
+      padding: 14px 18px;
+      font-size: 14px;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+    .scorecard tbody tr:last-child td { border-radius: 0 0 4px 4px; }
+
+    .th-feature { background: var(--grey-light); color: var(--text-muted); text-align: left !important; width: 28%; }
+    .th-ea      { background: #922b21; color: #fff; }
+    .th-uk      { background: #9a7d0a; color: #fff; }
+    .th-bm      {
+      background: var(--navy);
+      color: var(--gold);
+      box-shadow: inset 0 0 0 2px var(--gold);
+      position: relative;
+    }
+
+    .td-feature { background: var(--grey-light); color: var(--text-dark); font-weight: 500; text-align: left; }
+    .td-ea      { background: rgba(146,43,33,0.08); color: var(--text-dark); text-align: center; }
+    .td-uk      { background: rgba(154,125,10,0.08); color: var(--text-dark); text-align: center; }
+    .td-bm      {
+      background: rgba(11,31,58,0.05);
+      color: var(--navy);
+      font-weight: 600;
+      text-align: center;
+      border-left: 3px solid var(--gold);
+    }
+    .scorecard .cross { color: #c0392b; font-weight: 700; }
+    .scorecard .check { color: #1e8449; font-weight: 700; }
+
+    /* ── MOBILE ────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .digital-hero {
+        grid-template-columns: 1fr;
+        padding-top: var(--nav-height);
+      }
+      .digital-hero__left {
+        padding: 48px 24px;
+        border-right: none;
+        border-bottom: 1px solid rgba(201,168,76,0.18);
+      }
+      .digital-hero__right { padding: 48px 24px; }
+      .counter-grid { grid-template-columns: 1fr; }
+      .counter-cell { padding: 40px 24px; }
+    }
+    @media (max-width: 600px) {
+      .digital-hero__left { padding: 36px 20px; }
+      .digital-hero__right { padding: 36px 20px; }
+      .dash-browser { max-width: 100%; }
+    }
+  </style>
 </head>
 <body>
 
@@ -74,21 +333,82 @@
 
 
 <!-- ============================================================
-     HERO — full screen for the key differentiator page
-     Image: images/site/img-03-site-team-briefing.webp
+     HERO — SPLIT SCREEN
+     Left: CSS dashboard mockup  |  Right: headline copy
      ============================================================ -->
-<section class="hero" aria-label="Digital Project Oversight">
-  <div class="hero__bg" style="background-image: url('images/site/img-03-site-team-briefing.webp');"></div>
-  <div class="hero__overlay"></div>
-  <div class="hero__content">
+<section class="digital-hero" aria-label="Digital Project Oversight">
+
+  <!-- LEFT: Dashboard mockup -->
+  <div class="digital-hero__left" aria-hidden="true">
+    <div class="dash-browser">
+      <div class="dash-browser__bar">
+        <div class="dash-browser__dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="dash-browser__url">benchmark-diary.app/dashboard</div>
+      </div>
+      <div class="dash-content">
+        <div class="dash-header">
+          <span class="dash-title">Project Dashboard</span>
+          <span class="dash-date">08 May 2026 · 19:47</span>
+        </div>
+        <p class="dash-section-label">Active Sites — RAG Status</p>
+        <div class="dash-rows">
+          <div class="dash-row">
+            <div class="rag rag--green"></div>
+            <span class="dash-project">Micheweni Hospital Phase II</span>
+            <span class="dash-badge dash-badge--ok">✓ Submitted</span>
+          </div>
+          <div class="dash-row">
+            <div class="rag rag--green"></div>
+            <span class="dash-project">Ole Secondary School</span>
+            <span class="dash-badge dash-badge--ok">✓ Submitted</span>
+          </div>
+          <div class="dash-row">
+            <div class="rag rag--amber"></div>
+            <span class="dash-project">Al-Saadi Phase III</span>
+            <span class="dash-badge dash-badge--warn">⟳ Pending</span>
+          </div>
+          <div class="dash-row">
+            <div class="rag rag--green"></div>
+            <span class="dash-project">Chukwani Villa</span>
+            <span class="dash-badge dash-badge--ok">✓ Submitted</span>
+          </div>
+          <div class="dash-row">
+            <div class="rag rag--red"></div>
+            <span class="dash-project">Government Road Contract</span>
+            <span class="dash-badge dash-badge--alert">⚠ Action Required</span>
+          </div>
+        </div>
+        <div class="dash-statsbar">
+          <div class="dash-stat">
+            <span class="dash-stat__num">16</span>
+            <span class="dash-stat__lbl">Active Sites</span>
+          </div>
+          <div class="dash-stat">
+            <span class="dash-stat__num">847</span>
+            <span class="dash-stat__lbl">Diaries This Year</span>
+          </div>
+          <div class="dash-stat">
+            <span class="dash-stat__num">100%</span>
+            <span class="dash-stat__lbl">Escalated &lt;1hr</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Text -->
+  <div class="digital-hero__right">
     <p class="hero__pre">The Benchmark Difference</p>
     <h1 class="hero__title">Your Site.<br>Every Day.<br>In Your Inbox.</h1>
     <p class="hero__sub">Benchmark is the only contractor in Zanzibar running a daily digital site diary with live visibility for every client. What the best Tier 1 contractors in Europe do — here, now, for you.</p>
     <div class="hero__ctas">
-      <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="btn btn-primary btn-arrow" target="_blank" rel="noopener" data-i18n="btn-digital">See How It Works</a>
+      <a href="contact.html" class="btn btn-primary btn-arrow">Request a Live Demo</a>
       <a href="contact.html" class="btn btn-ghost">Request a Site Tour</a>
     </div>
   </div>
+
 </section>
 
 
@@ -123,7 +443,7 @@
 
 
 <!-- ============================================================
-     HOW THE SYSTEM WORKS — Feature list
+     HOW THE SYSTEM WORKS — SVG Icons
      ============================================================ -->
 <section class="section section--grey" aria-labelledby="system-heading">
   <div class="container">
@@ -134,7 +454,15 @@
     <div class="feature-list mt-48">
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">📋</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+            <line x1="8" y1="11" x2="16" y2="11"/>
+            <line x1="8" y1="15" x2="16" y2="15"/>
+            <line x1="8" y1="19" x2="12" y2="19"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">Daily Progress Report</h3>
           <p class="feature-item__desc">Every working day, the site supervisor records what work was completed, how many operatives were on site, what plant was deployed, and what materials were used. This goes into the digital diary system by 7pm without exception. Benchmark directors review every entry before distribution.</p>
@@ -142,7 +470,12 @@
       </div>
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">📸</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">Photographic Record</h3>
           <p class="feature-item__desc">Every diary entry includes site photographs timestamped and geotagged. This gives clients a visual record of daily progress, provides evidence of quality at every stage, and creates a permanent record that protects both the client and Benchmark in any future dispute about workmanship or programme.</p>
@@ -150,7 +483,13 @@
       </div>
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">⚠️</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">Safety Alerts — Automatic Escalation</h3>
           <p class="feature-item__desc">Any site incident — however minor — triggers an automatic safety alert that is sent immediately to the site director, the managing director, and the client's nominated representative. Near-misses are reported the same way. We follow the principle that the safest sites are the most transparent ones.</p>
@@ -158,7 +497,14 @@
       </div>
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">📊</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+            <line x1="2" y1="20" x2="22" y2="20"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">CEO Dashboard — Live Portfolio View</h3>
           <p class="feature-item__desc">Directors have a live dashboard showing the status of every active project simultaneously. RAG status (Red, Amber, Green) for programme, safety, and quality on each site. This is the same kind of programme visibility tool used by major European contractors to manage multi-site programmes — available here, in Zanzibar, today.</p>
@@ -166,7 +512,13 @@
       </div>
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">🌍</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">Bilingual — English and Swahili</h3>
           <p class="feature-item__desc">The entire system operates in both English and Swahili. International investors and diaspora clients receive reports in English. Government clients and local stakeholders access the same information in Swahili. This is not a translated summary — the full diary is written in both languages simultaneously.</p>
@@ -174,7 +526,12 @@
       </div>
 
       <div class="feature-item js-hidden">
-        <div class="feature-item__icon" aria-hidden="true">🔗</div>
+        <div class="feature-item__icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
         <div>
           <h3 class="feature-item__title">Staff Portal — Live Access</h3>
           <p class="feature-item__desc">Benchmark site staff, directors, and authorised client representatives can access the diary through a secure online portal. Project history, photographic archive, and programme tracking — all available in one place, on any device, from anywhere in the world.</p>
@@ -187,7 +544,30 @@
 
 
 <!-- ============================================================
-     COMPARISON TABLE — Benchmark vs. Regional standard
+     STATS COUNTER — animated on scroll
+     ============================================================ -->
+<section class="digital-counter" aria-label="System performance statistics">
+  <div class="container">
+    <div class="counter-grid">
+      <div class="counter-cell js-hidden">
+        <span class="counter-num js-count" data-target="16">0</span>
+        <span class="counter-lbl">Active Sites</span>
+      </div>
+      <div class="counter-cell js-hidden">
+        <span class="counter-num js-count" data-target="847">0</span>
+        <span class="counter-lbl">Daily diaries submitted this year</span>
+      </div>
+      <div class="counter-cell js-hidden">
+        <span class="counter-num">100%</span>
+        <span class="counter-lbl">Safety incidents escalated within 1 hour</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     COMPARISON SCORECARD
      ============================================================ -->
 <section class="section section--white" aria-labelledby="compare-heading">
   <div class="container">
@@ -195,64 +575,64 @@
     <h2 class="section__title text-center" id="compare-heading">Benchmark vs. the Regional Standard</h2>
     <p class="section__sub text-center">This is not a criticism of other contractors. It is an honest assessment of where the regional industry standard sits — and what we believe clients deserve instead.</p>
 
-    <div style="overflow-x:auto; margin-top:40px;">
-      <table class="comparison-table js-hidden" aria-label="Comparison of Benchmark Engineering vs typical regional contractor">
+    <div class="scorecard-wrap">
+      <table class="scorecard js-hidden" aria-label="Comparison of Benchmark Engineering vs typical regional contractor">
         <thead>
           <tr>
-            <th>Reporting Feature</th>
-            <th>Typical East African Contractor</th>
-            <th>UK Tier 1 Standard</th>
-            <th>Benchmark Engineering</th>
+            <th class="th-feature">Reporting Feature</th>
+            <th class="th-ea">Typical East African<br>Contractor</th>
+            <th class="th-uk">UK Tier 1<br>Standard</th>
+            <th class="th-bm">Benchmark<br>Engineering</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Daily written site diary</td>
-            <td><span class="cross">✗</span> Rarely</td>
-            <td><span class="check">✓</span> Always</td>
-            <td><span class="check">✓</span> Every site, every day</td>
+            <td class="td-feature">Daily written site diary</td>
+            <td class="td-ea"><span class="cross">✗</span> Rarely</td>
+            <td class="td-uk"><span class="check">✓</span> Always</td>
+            <td class="td-bm"><span class="check">✓</span> Every site, every day</td>
           </tr>
           <tr>
-            <td>Photographic site record</td>
-            <td><span class="cross">✗</span> Ad hoc</td>
-            <td><span class="check">✓</span> Systematic</td>
-            <td><span class="check">✓</span> Timestamped &amp; geotagged</td>
+            <td class="td-feature">Photographic site record</td>
+            <td class="td-ea"><span class="cross">✗</span> Ad hoc</td>
+            <td class="td-uk"><span class="check">✓</span> Systematic</td>
+            <td class="td-bm"><span class="check">✓</span> Timestamped &amp; geotagged</td>
           </tr>
           <tr>
-            <td>Safety incident reporting</td>
-            <td><span class="cross">✗</span> Verbal, if at all</td>
-            <td><span class="check">✓</span> Written within 24hrs</td>
-            <td><span class="check">✓</span> Automatic escalation</td>
+            <td class="td-feature">Safety incident reporting</td>
+            <td class="td-ea"><span class="cross">✗</span> Verbal, if at all</td>
+            <td class="td-uk"><span class="check">✓</span> Written within 24hrs</td>
+            <td class="td-bm"><span class="check">✓</span> Automatic escalation</td>
           </tr>
           <tr>
-            <td>Client programme visibility</td>
-            <td><span class="cross">✗</span> Phone calls</td>
-            <td><span class="check">✓</span> Weekly written reports</td>
-            <td><span class="check">✓</span> Daily, online, live</td>
-          </tr>
-          <tr class="highlight">
-            <td>Director-level review of all reports</td>
-            <td><span class="cross">✗</span> No</td>
-            <td><span class="check">✓</span> Yes</td>
-            <td><span class="check">✓</span> Every entry reviewed</td>
+            <td class="td-feature">Client programme visibility</td>
+            <td class="td-ea"><span class="cross">✗</span> Phone calls</td>
+            <td class="td-uk"><span class="check">✓</span> Weekly written reports</td>
+            <td class="td-bm"><span class="check">✓</span> Daily, online, live</td>
           </tr>
           <tr>
-            <td>Bilingual reporting (EN / SW)</td>
-            <td><span class="cross">✗</span> No</td>
-            <td>N/A</td>
-            <td><span class="check">✓</span> Full bilingual system</td>
+            <td class="td-feature">Director-level review of all reports</td>
+            <td class="td-ea"><span class="cross">✗</span> No</td>
+            <td class="td-uk"><span class="check">✓</span> Yes</td>
+            <td class="td-bm"><span class="check">✓</span> Every entry reviewed</td>
           </tr>
           <tr>
-            <td>Multi-project CEO dashboard</td>
-            <td><span class="cross">✗</span> No</td>
-            <td><span class="check">✓</span> Yes</td>
-            <td><span class="check">✓</span> Live RAG status per site</td>
+            <td class="td-feature">Bilingual reporting (EN / SW)</td>
+            <td class="td-ea"><span class="cross">✗</span> No</td>
+            <td class="td-uk" style="color:var(--text-muted);">N/A</td>
+            <td class="td-bm"><span class="check">✓</span> Full bilingual system</td>
           </tr>
           <tr>
-            <td>Client portal access</td>
-            <td><span class="cross">✗</span> No</td>
-            <td><span class="check">✓</span> Project extranets</td>
-            <td><span class="check">✓</span> Secure online portal</td>
+            <td class="td-feature">Multi-project CEO dashboard</td>
+            <td class="td-ea"><span class="cross">✗</span> No</td>
+            <td class="td-uk"><span class="check">✓</span> Yes</td>
+            <td class="td-bm"><span class="check">✓</span> Live RAG status per site</td>
+          </tr>
+          <tr>
+            <td class="td-feature">Client portal access</td>
+            <td class="td-ea"><span class="cross">✗</span> No</td>
+            <td class="td-uk"><span class="check">✓</span> Project extranets</td>
+            <td class="td-bm"><span class="check">✓</span> Secure online portal</td>
           </tr>
         </tbody>
       </table>
@@ -262,7 +642,7 @@
 
 
 <!-- ============================================================
-     WHY THIS MATTERS — pull quote section on navy
+     WHY THIS MATTERS — pull quote on navy
      ============================================================ -->
 <section class="digital-strip" aria-label="Why digital oversight matters">
   <div class="container">
@@ -273,7 +653,7 @@
         <p style="color:rgba(255,255,255,0.5); font-size:13px; margin-top:16px;">— Mahir Said Ali, Managing Director</p>
       </div>
       <div class="digital-strip__actions">
-        <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="btn btn-primary" target="_blank" rel="noopener">Open the Staff Portal</a>
+        <a href="contact.html" class="btn btn-primary">Request a Live Demo</a>
         <a href="contact.html" class="btn btn-ghost">Ask for a Demo</a>
       </div>
     </div>
@@ -327,7 +707,7 @@
         <p class="cta-strip__sub">Visit the Staff Portal or contact us to arrange a live demonstration of the diary system on an active Benchmark site.</p>
       </div>
       <div class="cta-strip__actions">
-        <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="btn--gold" target="_blank" rel="noopener">Open Staff Portal</a>
+        <a href="contact.html" class="btn--gold">Request a Live Demo</a>
         <a href="contact.html" class="btn--outline-navy">Request a Demo</a>
       </div>
     </div>
@@ -405,6 +785,31 @@
 </a>
 
 <script src="js/main.js"></script>
+<script>
+  /* Count-up animation for digital stats */
+  (function () {
+    var counters = document.querySelectorAll('.js-count');
+    if (!counters.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var duration = 1600;
+        var start = performance.now();
+        function tick(now) {
+          var elapsed = now - start;
+          var progress = Math.min(elapsed / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target);
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+        observer.unobserve(el);
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(function (c) { observer.observe(c); });
+  }());
+</script>
 </body>
 </html>
-
