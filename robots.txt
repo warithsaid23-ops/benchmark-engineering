@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block staff portal (noindex already set in HTML but belt-and-braces)
+Disallow: /staff-portal.html
+
+Sitemap: https://warithsaid23-ops.github.io/benchmark-engineering/sitemap.xml
