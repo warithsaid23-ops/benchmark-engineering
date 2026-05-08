@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mkoani Hotel Renovation Case Study — Benchmark Engineering</title>
+  <meta name="description" content="Complete renovation of Pemba Hotel, Mkoani — a government-commissioned transformation that revived Pemba Island's landmark hospitality building. Delivered by Benchmark Engineering." />
+  <meta property="og:title" content="Mkoani Hotel Renovation — Benchmark Engineering" />
+  <meta property="og:description" content="From derelict ruin to island landmark. Benchmark Engineering's complete renovation of Pemba Hotel, commissioned by the Government of Zanzibar." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    .before-after-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+    .before-after-wrap img { width:100%; height:380px; object-fit:cover; display:block; }
+    .ba-label {
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 10px;
+      color: #fff;
+    }
+    .ba-label--before { background: #922b21; }
+    .ba-label--after  { background: #1a5c2e; }
+    .before-after-composite {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+    .before-after-composite img { width:100%; display:block; }
+    .video-section {
+      background: var(--navy);
+      padding: 80px 0;
+    }
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      margin-top: 40px;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    @media (max-width: 700px) {
+      .before-after-wrap { grid-template-columns: 1fr; }
+      .before-after-wrap img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo" aria-label="Benchmark Engineering — Home">
+      <span class="nav__logo-mark">BENCHMARK</span>
+      <span class="nav__logo-sub">Engineering Co. Ltd</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="../about.html" class="nav__link">About</a></li>
+      <li class="nav__dropdown">
+        <a href="../services.html" class="nav__link">Services ▾</a>
+        <ul class="nav__dropdown-menu">
+          <li><a href="../government.html" class="nav__dropdown-item">Government &amp; Healthcare</a></li>
+          <li><a href="../luxury.html" class="nav__dropdown-item">Luxury Residential</a></li>
+          <li><a href="../plant.html" class="nav__dropdown-item">Plant &amp; Equipment</a></li>
+          <li><a href="../safety.html" class="nav__dropdown-item">Safety</a></li>
+        </ul>
+      </li>
+      <li class="nav__dropdown">
+        <a href="../projects.html" class="nav__link nav__link--active">Projects ▾</a>
+        <ul class="nav__dropdown-menu">
+          <li><a href="al-saadia-apartments.html" class="nav__dropdown-item">Al-Saadi Apartments</a></li>
+          <li><a href="micheweni-hospital.html" class="nav__dropdown-item">Micheweni Hospital</a></li>
+          <li><a href="ole-secondary-school.html" class="nav__dropdown-item">Ole Secondary School</a></li>
+          <li><a href="kwale-secondary-school.html" class="nav__dropdown-item">Kwale Secondary School</a></li>
+          <li><a href="mkoani-hotel.html" class="nav__dropdown-item">Mkoani Hotel</a></li>
+          <li><a href="../projects.html" class="nav__dropdown-item">All Projects</a></li>
+        </ul>
+      </li>
+      <li><a href="../digital.html" class="nav__link">Digital Oversight</a></li>
+      <li><a href="../contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__controls">
+      <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__portal-btn" target="_blank" rel="noopener">Staff Portal</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <ul class="nav__mobile-links" role="list">
+      <li><a href="../about.html" class="nav__mobile-link">About</a></li>
+      <li><a href="../services.html" class="nav__mobile-link">Services</a></li>
+      <li><a href="../projects.html" class="nav__mobile-link">Projects</a></li>
+      <li><a href="../digital.html" class="nav__mobile-link">Digital Oversight</a></li>
+      <li><a href="../safety.html" class="nav__mobile-link">Safety</a></li>
+      <li><a href="../plant.html" class="nav__mobile-link">Plant &amp; Equipment</a></li>
+      <li><a href="../contact.html" class="nav__mobile-link">Contact</a></li>
+      <li><a href="https://warithsaid23-ops.github.io/benchmark-diary" class="nav__mobile-link nav__mobile-link--portal" target="_blank" rel="noopener">Staff Portal ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     CASE STUDY HERO
+     ============================================================ -->
+<section class="hero case-hero" aria-label="Mkoani Hotel Renovation">
+  <div class="hero__bg" style="background-image: url('../images/projects/img-22-mkoani-hotel-hq.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__pre">Case Study — Government Renovation · Mkoani, Pemba Island</p>
+    <h1 class="hero__title">Mkoani Hotel<br>Renovation</h1>
+    <p class="hero__sub">A derelict island landmark brought back to life. Benchmark Engineering delivered the complete renovation of Pemba Hotel for the Government of Zanzibar — transforming a crumbling building into a modern hospitality facility that serves both the island and the state.</p>
+  </div>
+</section>
+
+<!-- PROJECT STATS BAR -->
+<div class="project-stats-bar" aria-label="Project statistics">
+  <div class="container">
+    <div class="project-stats-bar__inner">
+      <div class="project-stat">
+        <p class="project-stat__label">Project Type</p>
+        <p class="project-stat__value">Full Renovation</p>
+      </div>
+      <div class="project-stat">
+        <p class="project-stat__label">Client</p>
+        <p class="project-stat__value">Government of Zanzibar</p>
+      </div>
+      <div class="project-stat">
+        <p class="project-stat__label">Location</p>
+        <p class="project-stat__value">Mkoani, Pemba Island</p>
+      </div>
+      <div class="project-stat">
+        <p class="project-stat__label">Procurement</p>
+        <p class="project-stat__value">Government Commission</p>
+      </div>
+      <div class="project-stat">
+        <p class="project-stat__label">Status</p>
+        <p class="project-stat__value">Completed &amp; Operational</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- THE CHALLENGE -->
+<section class="case-section section--white" aria-labelledby="challenge-heading">
+  <div class="container">
+    <div class="case-content js-hidden">
+      <p class="section__label">The Challenge</p>
+      <h2 class="section__title" id="challenge-heading">Reviving a Landmark<br>That Had Been Left to Decay</h2>
+      <p class="story-body">Pemba Hotel in Mkoani was once the island's most prominent hospitality building. By the time the Government of Zanzibar commissioned its renovation, the structure had deteriorated severely — crumbling facades, damaged interiors, and infrastructure that bore no resemblance to a functioning hotel. The building was a liability where it should have been an asset.</p>
+      <p class="story-body">Renovation is one of the most technically demanding forms of construction. Unlike a new build, every decision is constrained by what already exists — unpredictable structural conditions, hidden service runs, and the need to retain the building's character while rebuilding it to a standard that meets modern expectations. On an island like Pemba, where materials must be transported and skilled labour is limited, these challenges are amplified significantly.</p>
+      <p class="story-body">The Government required a contractor with the classification, the capacity, and the technical judgement to take on a building of this complexity — and deliver a result that could stand as a public-sector reference project for the island.</p>
+    </div>
+
+    <!-- Before / After composite image -->
+    <div class="before-after-composite js-hidden">
+      <img src="../images/projects/img-35-mkoani-hotel-before-after.jpg"
+           alt="Mkoani Hotel before and after renovation — top: completed hotel, bottom: original derelict building" />
+    </div>
+  </div>
+</section>
+
+
+<!-- THE APPROACH -->
+<section class="case-section section--grey" aria-labelledby="approach-heading">
+  <div class="container">
+    <div class="case-content js-hidden">
+      <p class="section__label">The Benchmark Approach</p>
+      <h2 class="section__title" id="approach-heading">Structure First.<br>Then Character.<br>Then Finish.</h2>
+      <p class="story-body">Benchmark's approach to the Mkoani Hotel renovation began with a thorough structural assessment before any scope was finalised. Existing conditions were surveyed, deteriorated elements were identified, and a sequenced programme was developed that addressed the structure before any architectural or fit-out work began.</p>
+      <p class="story-body">The external transformation was comprehensive — the crumbling facade was completely rebuilt with new render, decorative arched window surrounds, and a clean contemporary finish that restored the building's civic prominence in Mkoani town. The internal works covered all rooms, public areas, corridors, and back-of-house spaces, with new electrical installations, plumbing, and sanitary fit-out throughout.</p>
+      <p class="story-body">Benchmark's owned concrete mixing capability and lorry fleet were critical to maintaining supply chain reliability on Pemba Island, where reliance on third-party logistics would have introduced programme risk. All works were completed to Class 1 contractor specification and Government of Zanzibar inspection standards.</p>
+    </div>
+
+    <!-- Deliverables -->
+    <div class="deliverables-list js-hidden" style="margin-top:40px;">
+      <div class="deliverable-item">Structural assessment and remediation works</div>
+      <div class="deliverable-item">Complete external facade rebuild and render</div>
+      <div class="deliverable-item">Decorative facade detailing — arched surrounds, parapet</div>
+      <div class="deliverable-item">Full internal strip-out and rebuilding works</div>
+      <div class="deliverable-item">All guest rooms — new finishes, fixtures and fittings</div>
+      <div class="deliverable-item">New electrical installation throughout</div>
+      <div class="deliverable-item">Plumbing and sanitary fit-out — all areas</div>
+      <div class="deliverable-item">Public areas — reception, corridors, communal spaces</div>
+      <div class="deliverable-item">External boundary, gates, and approach works</div>
+      <div class="deliverable-item">Government of Zanzibar inspection compliance</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- IMPACT STATS — NAVY SECTION -->
+<section class="case-section section--navy" aria-labelledby="impact-heading">
+  <div class="container">
+    <p class="section__label section__label--gold text-center">The Transformation</p>
+    <h2 class="section__title section__title--white text-center" id="impact-heading">An Island Asset<br>Restored to Purpose</h2>
+    <div class="stats-bar__inner" style="margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr);">
+      <div class="stat">
+        <span class="stat__num">Complete</span>
+        <span class="stat__label">Renovation — structure, facade, interior, and all services</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">Pemba</span>
+        <span class="stat__label">Island's landmark government hospitality project</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">Class 1</span>
+        <span class="stat__label">Contractor specification — ZCR No. 206</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GOVERNMENT VIDEO — TRANSFORMATION DOCUMENTARY -->
+<section class="video-section" aria-labelledby="video-heading">
+  <div class="container">
+    <p class="section__label section__label--gold text-center">Government Record</p>
+    <h2 class="section__title section__title--white text-center" id="video-heading">The Transformation<br>on Film</h2>
+    <p class="section__sub text-center" style="color:rgba(255,255,255,0.65); max-width:600px; margin:0 auto;">The Government of Zanzibar commissioned this documentary record of the Mkoani Hotel renovation — a before-and-after account of the project from dereliction to completion.</p>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/f1J38FlDKxo"
+        title="Mkoani Hotel renovation — Government of Zanzibar documentary"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO GALLERY -->
+<section class="case-section section--white" aria-labelledby="gallery-heading">
+  <div class="container">
+    <p class="section__label">Site Photography</p>
+    <h2 class="section__title" id="gallery-heading">Project Record</h2>
+    <div class="gallery-grid js-hidden" style="margin-top:32px;">
+      <div class="gallery-img gallery-grid__main">
+        <img src="../images/projects/img-22-mkoani-hotel-hq.jpg" alt="Mkoani Hotel — completed renovation, Pemba Island" loading="lazy" />
+      </div>
+      <div class="gallery-img">
+        <img src="../images/projects/img-13-mkoani-hotel.webp" alt="Mkoani Hotel completed exterior" loading="lazy" />
+      </div>
+      <div class="gallery-img">
+        <img src="../images/projects/img-35-mkoani-hotel-before-after.jpg" alt="Mkoani Hotel before and after renovation" loading="lazy" />
+      </div>
+      <div class="gallery-img">
+        <img src="../images/site/img-09-concrete-pour.webp" alt="Concrete works — Mkoani Hotel renovation" loading="lazy" />
+      </div>
+      <div class="gallery-img">
+        <img src="../images/site/img-06-foundation-sunset.webp" alt="Structural works — Benchmark Engineering" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GOVERNMENT TRUST STRIP -->
+<div class="digital-strip" aria-label="Government renovation credentials">
+  <div class="container">
+    <div class="digital-strip__inner">
+      <div>
+        <span class="digital-strip__quote-mark">"</span>
+        <p class="digital-strip__text">The Mkoani Hotel renovation shows what is possible when a Class 1 contractor with real island experience takes on a complex government brief. The transformation speaks for itself.</p>
+      </div>
+      <div class="digital-strip__actions">
+        <a href="../government.html" class="btn btn-primary">Government Sector</a>
+        <a href="../contact.html" class="btn btn-ghost">Discuss a Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- RELATED PROJECTS -->
+<section class="case-section section--grey" aria-labelledby="related-heading">
+  <div class="container">
+    <p class="section__label">Related Work</p>
+    <h2 class="section__title" id="related-heading">More Government Work</h2>
+    <div class="projects-grid" style="margin-top:32px;">
+      <article class="project-card js-hidden" aria-labelledby="rel-micheweni">
+        <div class="project-card__image">
+          <img src="../images/projects/img-07-micheweni-exterior.webp" alt="Micheweni District Hospital" loading="lazy" />
+          <div class="project-card__overlay"></div>
+          <div class="project-card__tags"><span class="tag tag--completed">Completed</span><span class="tag tag--healthcare">Healthcare</span></div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Micheweni, Pemba Island</p>
+          <h3 class="project-card__title" id="rel-micheweni">Micheweni District Hospital</h3>
+          <p class="project-card__desc">TZS 4.8 billion healthcare facility serving 123,379 people. Benchmark's most complex government project.</p>
+          <div class="project-card__meta"><span class="project-card__year">2017</span><a href="micheweni-hospital.html" class="project-card__arrow">→</a></div>
+        </div>
+      </article>
+      <article class="project-card js-hidden" aria-labelledby="rel-ole">
+        <div class="project-card__image">
+          <img src="../images/projects/img-34-ole-school-exterior.png" alt="Ole Secondary School" loading="lazy" />
+          <div class="project-card__overlay"></div>
+          <div class="project-card__tags"><span class="tag tag--completed">Completed</span><span class="tag tag--govt">Government</span></div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Ole, Pemba Island</p>
+          <h3 class="project-card__title" id="rel-ole">Ole Secondary School</h3>
+          <p class="project-card__desc">Multi-block secondary school campus opened by the President of Zanzibar in 2024. ZPPDA compliant.</p>
+          <div class="project-card__meta"><span class="project-card__year">2024</span><a href="ole-secondary-school.html" class="project-card__arrow">→</a></div>
+        </div>
+      </article>
+      <article class="project-card js-hidden" aria-labelledby="rel-all3">
+        <div class="project-card__image" style="background:var(--navy); display:flex; align-items:center; justify-content:center; height:260px;">
+          <span style="color:var(--gold); font-family:var(--font-serif); font-size:32px; font-weight:700;">50+</span>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__location">Zanzibar &amp; Pemba Island</p>
+          <h3 class="project-card__title" id="rel-all3">Full Portfolio</h3>
+          <p class="project-card__desc">Browse all fifty completed projects across six construction disciplines.</p>
+          <div class="project-card__meta"><span class="project-card__year">2011–2025</span><a href="../projects.html" class="project-card__arrow">→</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="section section--white" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-strip js-hidden">
+      <div class="cta-strip__text">
+        <h2 class="cta-strip__title">Renovating a Government Building?</h2>
+        <p class="cta-strip__sub">Complex renovation demands a contractor with real island experience. Contact us to discuss your project.</p>
+      </div>
+      <div class="cta-strip__actions">
+        <a href="../contact.html" class="btn--gold">Make an Enquiry</a>
+        <a href="../government.html" class="btn--outline-navy">Government Sector</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__logo"><span class="footer__logo-mark">BENCHMARK</span><span class="footer__logo-sub">Engineering Co. Ltd</span></div>
+        <p class="footer__motto">Building the future of Zanzibar — one disciplined project at a time.</p>
+        <ul class="footer__contact">
+          <li><a href="tel:+255656262202">+255 656 262 202</a></li>
+          <li><a href="tel:+255717568999">+255 717 568 999</a></li>
+          <li><a href="mailto:bengmark2010@gmail.com">bengmark2010@gmail.com</a></li>
+          <li>Zanzibar, Tanzania</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Navigate</span>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../digital.html">Digital Oversight</a></li>
+          <li><a href="../safety.html">Safety</a></li>
+          <li><a href="../plant.html">Plant &amp; Equipment</a></li>
+          <li><a href="../careers.html">Careers</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Key Projects</span>
+        <ul class="footer__links">
+          <li><a href="al-saadia-apartments.html">Al-Saadi Apartments</a></li>
+          <li><a href="micheweni-hospital.html">Micheweni Hospital</a></li>
+          <li><a href="ole-secondary-school.html">Ole Secondary School</a></li>
+          <li><a href="mkoani-hotel.html">Mkoani Hotel</a></li>
+          <li><a href="../projects.html">Full Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Credentials</span>
+        <ul class="footer__creds">
+          <li>ZCR No. 206 — Class 1</li>
+          <li>ZPPDA Reg. W000367</li>
+          <li>ZRB VAT TIN 111-500-657</li>
+          <li>TRA Registered</li>
+          <li>Est. 2011 · Zanzibar</li>
+        </ul>
+        <a href="https://warithsaid23-ops.github.io/benchmark-diary" class="footer__portal-link" target="_blank" rel="noopener">Staff Portal ↗</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Benchmark Engineering Co. Ltd. All rights reserved.</p>
+      <p>Registered in Zanzibar, Tanzania.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
