@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Portal — Benchmark Engineering Co. Ltd</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0B1F3A;
+      --navy-deep: #071528;
+      --gold: #C9A84C;
+      --gold-hover: #b8943e;
+      --white: #ffffff;
+      --grey-light: #f5f5f3;
+      --text-muted: #6b7280;
+      --error: #c0392b;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--navy-deep);
+      font-family: var(--font-sans);
+      color: var(--white);
+    }
+
+    .portal-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background:
+        radial-gradient(ellipse at 30% 60%, rgba(201,168,76,0.06) 0%, transparent 60%),
+        var(--navy-deep);
+    }
+
+    .portal-card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      padding: 48px 40px;
+      text-align: center;
+    }
+
+    .portal-logo {
+      margin-bottom: 32px;
+    }
+    .portal-logo__mark {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      color: var(--gold);
+    }
+    .portal-logo__sub {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-top: 4px;
+    }
+
+    .portal-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      border: none;
+      margin: 0 auto 28px;
+      opacity: 0.5;
+    }
+
+    .portal-title {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--white);
+    }
+
+    .portal-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .portal-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .portal-input-wrap {
+      position: relative;
+    }
+
+    .portal-input {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .portal-input:focus {
+      border-color: var(--gold);
+      background: rgba(255,255,255,0.08);
+    }
+    .portal-input::placeholder { color: rgba(255,255,255,0.3); }
+
+    .portal-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--gold);
+      color: var(--navy-deep);
+      border: none;
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .portal-submit:hover { background: var(--gold-hover); }
+    .portal-submit:active { transform: scale(0.99); }
+
+    .portal-error {
+      display: none;
+      padding: 12px 16px;
+      background: rgba(192,57,43,0.15);
+      border: 1px solid rgba(192,57,43,0.4);
+      border-radius: 6px;
+      color: #e74c3c;
+      font-size: 13px;
+      text-align: left;
+    }
+    .portal-error.visible { display: block; }
+
+    .portal-back {
+      display: inline-block;
+      margin-top: 28px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .portal-back:hover { color: rgba(255,255,255,0.7); }
+
+    .portal-footer {
+      margin-top: 48px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.18);
+      text-align: center;
+      letter-spacing: .04em;
+    }
+
+    /* Shake animation on wrong password */
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+    }
+    .shake { animation: shake 0.4s ease; }
+  </style>
+</head>
+<body>
+
+<div class="portal-page">
+  <div class="portal-card" id="portal-card">
+
+    <div class="portal-logo">
+      <span class="portal-logo__mark">BENCHMARK</span>
+      <span class="portal-logo__sub">Engineering Co. Ltd</span>
+    </div>
+
+    <hr class="portal-rule" />
+
+    <h1 class="portal-title">Staff Portal</h1>
+    <p class="portal-sub">This area is restricted to authorised Benchmark Engineering staff only. Enter your access password to continue.</p>
+
+    <form class="portal-form" id="portal-form" autocomplete="off">
+      <div class="portal-input-wrap">
+        <input
+          type="password"
+          id="portal-password"
+          class="portal-input"
+          placeholder="Enter access password"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+
+      <div class="portal-error" id="portal-error" role="alert">
+        Incorrect password. Please try again or contact your site manager.
+      </div>
+
+      <button type="submit" class="portal-submit">Access Portal →</button>
+    </form>
+
+    <a href="index.html" class="portal-back">← Return to main website</a>
+  </div>
+
+  <p class="portal-footer">RESTRICTED ACCESS · BENCHMARK ENGINEERING CO. LTD · ZANZIBAR</p>
+</div>
+
+<script>
+  // Password is stored as a SHA-256 hash.
+  // Current password: BenchmarkStaff25
+  // To change: generate a new SHA-256 hash of your chosen password and replace the value below.
+  // Online tool: https://emn178.github.io/online-tools/sha256.html
+  var PORTAL_HASH = '7d3f2a1e5c9b4f8a0e6d2c7b3f9a4e1d8c5b2f7a3e9d0c6b4f1a8e5d2c9b3f7';
+  // NOTE TO OWNER: The hash above is a placeholder. Replace it with the real hash of your chosen password.
+  // The portal URL below should also be updated to the correct internal diary URL.
+  var PORTAL_URL  = 'https://warithsaid23-ops.github.io/benchmark-diary';
+
+  async function hashPassword(pw) {
+    var msgBuffer  = new TextEncoder().encode(pw);
+    var hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    var hashArray  = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+  }
+
+  document.getElementById('portal-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var pw   = document.getElementById('portal-password').value;
+    var hash = await hashPassword(pw);
+    var err  = document.getElementById('portal-error');
+    var card = document.getElementById('portal-card');
+
+    if (hash === PORTAL_HASH) {
+      // Store session so page reload doesn't kick them out
+      sessionStorage.setItem('bm_portal_auth', '1');
+      document.getElementById('portal-submit') && (document.getElementById('portal-submit').textContent = 'Redirecting…');
+      window.location.href = PORTAL_URL;
+    } else {
+      err.classList.add('visible');
+      card.classList.remove('shake');
+      void card.offsetWidth; // reflow to restart animation
+      card.classList.add('shake');
+      document.getElementById('portal-password').value = '';
+      document.getElementById('portal-password').focus();
+    }
+  });
+
+  // Hide error when user starts typing again
+  document.getElementById('portal-password').addEventListener('input', function() {
+    document.getElementById('portal-error').classList.remove('visible');
+  });
+</script>
+
+</body>
+</html>
