@@ -219,29 +219,17 @@ function applyLanguage(lang) {
   counters.forEach(function (c) { observer.observe(c); });
 })();
 
-/* ── CONTACT / ENQUIRY FORM ─────────────────────────────────── */
-(function initForms() {
-  document.querySelectorAll('.js-form').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = form.querySelector('[type="submit"]');
-      const originalText = btn.textContent;
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-
-      // Simulate submission (replace with real endpoint / Formspree / Netlify Forms)
-      setTimeout(function () {
-        const msg = document.createElement('div');
-        msg.style.cssText = 'background:#C9A84C;color:#0B1F3A;padding:16px 24px;border-radius:3px;font-weight:600;margin-top:16px;font-size:15px;';
-        msg.textContent = 'Thank you — we\'ll be in touch within one business day.';
-        form.appendChild(msg);
-        form.reset();
-        btn.textContent = originalText;
-        btn.disabled = false;
-        setTimeout(function () { msg.remove(); }, 6000);
-      }, 1200);
-    });
-  });
+/* ── CONTACT FORM — success banner after Formsubmit.co redirect ── */
+(function initFormSuccess() {
+  if (window.location.search.indexOf('sent=1') !== -1) {
+    var form = document.querySelector('[aria-label="Project enquiry form"]');
+    if (form) {
+      var msg = document.createElement('div');
+      msg.style.cssText = 'background:#C9A84C;color:#0B1F3A;padding:16px 24px;border-radius:3px;font-weight:600;margin-bottom:24px;font-size:15px;';
+      msg.textContent = 'Thank you — we\'ll be in touch within one business day.';
+      form.parentNode.insertBefore(msg, form);
+    }
+  }
 })();
 
 /* ── SMOOTH REVEAL ON LOAD ──────────────────────────────────── */
